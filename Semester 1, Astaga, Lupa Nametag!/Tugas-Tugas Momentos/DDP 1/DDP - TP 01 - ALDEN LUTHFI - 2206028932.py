@@ -58,12 +58,12 @@ def main():
 
     #looping untuk setiap lapisan
     for lapisan in range(jumlah_lapisan):
-        
+
         #persiapan menggambar lapisan dengan menaruh turtle di titik (x, y)
         turtle.penup()
         turtle.goto(koordinat_x, koordinat_y)
         turtle.pendown()
-        
+
         #penentuan jumlah bata pada lapisan (berkurang 1 setiap lapisan)
         bata_lapisan = bata_bawah - lapisan
 
@@ -127,7 +127,7 @@ Metode Rahasia, ubah variabel mode_rahasia menjadi True (just for fun)
 def pewarna(jumlah_lapisan, bata_lapisan, lapisan, bata):
 
     if bata_lapisan > 2:
-    
+
         partisi_hijau = 255 // (jumlah_lapisan - 2)
         partisi_merah_biru= 255 // (bata_lapisan - 2)
 

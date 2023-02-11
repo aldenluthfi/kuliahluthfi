@@ -9,11 +9,11 @@ total = lambda x, y: f'{sum(x[i] * y[i] for i in x.keys()):,}'.replace(',', '.')
 def main() -> None:
 
     data_menu: dict[str, dict[tuple[str, str], int]] | None = pindai_menu()     # Pembacaan menu
-    
+
     if data_menu == None:                                                       # Validasi menu
         o("Daftar menu tidak valid, cek kembali menu.txt!")
         return
-    
+
     isi: list[dict[tuple[str, str], int]] = list(data_menu.values())            # Dictionary isi dari menu
     harga: dict[str, int] = {k: v for m in isi for t, v in m.items() for k in t}# Dictionary menu: harga
     kode: dict[str, str] = {k: v for m in isi for k, v in m.keys()}             # Dictionary kode: nama
@@ -50,22 +50,22 @@ def pindai_menu() -> dict[str, dict[tuple[str, str], int]] | None:              
                 return
 
         entri: list[list[str]] = [slit(x, '\n') for x in slit(isi, '===') if x]
-        
+
         for judul, *menu in entri:                                              # Membuat Dictionary menu
-            if judul in hasil.keys(): 
+            if judul in hasil.keys():
                 return
-            
+
             hasil[judul] = {}
 
             for menu_item in menu:
                 kode, nama, harga = slit(menu_item, ';')
-                
-                if kode in list_nama or nama in list_nama: 
+
+                if kode in list_nama or nama in list_nama:
                     return
 
                 list_nama.extend([kode, nama])                                  # Menambah biar tidak ada duplikat
                 hasil[judul][(kode, nama)] = int(harga)                         # Memberikan value pada key
-    
+
     return hasil
 
 def cetak_menu(data_menu: dict[str, dict[tuple[str, str], int]]) -> str:        # Mencetak menu
@@ -77,7 +77,7 @@ def cetak_menu(data_menu: dict[str, dict[tuple[str, str], int]]) -> str:        
 
         for (kode, nama), harga in menu.items():
             hasil += f'\n{kode} {nama}, Rp{f"{harga:,}".replace(",", ".")}'
-    
+
     return hasil                                                                # Mereturnnya sebagai string
 
 def cetak_pesanan(pesanan: dict[str, int], harga: dict[str, int]) -> str:       # Mencetak pesanan sesuai meja
@@ -85,7 +85,7 @@ def cetak_pesanan(pesanan: dict[str, int], harga: dict[str, int]) -> str:       
     hasil: str = '\nBerikut adalah pesanan Anda:'
 
     for nama, jumlah in pesanan.items():                                        # Mengambil nilai nama dan jumlah
-                                                                                
+
         subtotal: str = f"{jumlah * harga[nama]:,}".replace(',', '.')           # dari dictionary
         hasil += f'\n{nama} {jumlah} buah, total Rp{subtotal}'
 
@@ -93,15 +93,15 @@ def cetak_pesanan(pesanan: dict[str, int], harga: dict[str, int]) -> str:       
 
 def validasi_item(item: str, key: typing.Any) -> str | None:                    # Validasi makanan ada pada menu
 
-    list_valid: list[str] = [x for m in key.items() for x in m]                 # Membuat list nama item yang valid                
+    list_valid: list[str] = [x for m in key.items() for x in m]                 # Membuat list nama item yang valid
 
     if item not in list_valid and item not in list_valid:
-        o(f'Menu {item} tidak ditemukan. ', e='') 
-        return       
-    
+        o(f'Menu {item} tidak ditemukan. ', e='')
+        return
+
     if item in key.keys():                                                      # Jika item berbentuk kode maka ubah ke
         item = key[item]                                                        # bentuk nama
-    
+
     return item
 
 def buat(*info_kafe: typing.Any) -> None:
@@ -119,20 +119,20 @@ def buat(*info_kafe: typing.Any) -> None:
     o(f'{cetak_menu(data_menu)}\n')
 
     while True:
-        
+
         pesan: str = i('Masukkan menu yang ingin Anda pesan: ')                 # Input pesanan
 
         if pesan == 'SELESAI':
             break
 
-        if (valid := validasi_item(pesan, kode)) == None:                       # Validasi input                     
+        if (valid := validasi_item(pesan, kode)) == None:                       # Validasi input
             continue
 
         pesan = valid
         pesanan[meja][pesan] = pesanan[meja].get(pesan, 0) + 1                  # Menambahkan pesanan
 
         o(f'Berhasil memesan {pesan}. ', e='')
-    
+
     o(cetak_pesanan(pesanan[meja], harga))                                      # Output
     o(f'\nTotal pesanan: Rp{total(pesanan[meja], harga)}')
     o('Pesanan akan kami proses, Anda bisa menggunakan meja ', e='')
@@ -146,7 +146,7 @@ def ubah(*info_kafe: typing.Any) -> None:
     if not meja.isnumeric() or not int(meja) or pesanan[int(meja)] == None:     # Validasi input
         o('Nomor meja kosong atau tidak sesuai!\n\n---')
         return
-    
+
     pesan_meja: dict[str, int] = pesanan[int(meja)]
 
     o(cetak_menu(data_menu))
@@ -163,7 +163,7 @@ def ubah(*info_kafe: typing.Any) -> None:
                 if not pesan_meja.get(valid):
                     o(f'Menu {ganti} tidak anda pesan sebelumnya. ', e='')
                     continue
-                
+
                 ganti = valid
                 jumlah: int = int(i('Masukkan jumlah pesanan yang baru: '))
 
@@ -184,11 +184,11 @@ def ubah(*info_kafe: typing.Any) -> None:
                     continue
 
                 hapus = valid
-                jumlah: int = pesan_meja[hapus]                                 
+                jumlah: int = pesan_meja[hapus]
 
                 del pesan_meja[hapus]                                           # Menghapus pesanan
-                
-                o(f'{jumlah} buah {hapus} dihapus dari pesanan. ', e='')                
+
+                o(f'{jumlah} buah {hapus} dihapus dari pesanan. ', e='')
             case 'TAMBAH PESANAN':
                 tambah: str = i('Menu apa yang ingin Anda pesan: ')             # Input
 
@@ -209,14 +209,14 @@ def ubah(*info_kafe: typing.Any) -> None:
     o(f'\nTotal pesanan: Rp{total(pesan_meja, harga)}\n\n---')
 
 def selesai(*info_kafe: typing.Any) -> None:
-    
+
     nama, pengguna, pesanan, harga = info_kafe
     meja: str = i('Nomor meja berapa? ')                                        # Input nomor meja
 
     if not meja.isnumeric() or not int(meja) or pesanan[int(meja)] == None:     # Validasi nomor meja
         o('Nomor meja kosong atau tidak valid!\n\n---')
         return
-    
+
     pesan_meja: dict[str, int] = pesanan[int(meja)]
     customer: str = pengguna[int(meja)]
 
@@ -237,11 +237,11 @@ def selesai(*info_kafe: typing.Any) -> None:
             subtotal: int = value * harga[key]
             entri: str = f'{nama[key]};{key};{value};{harga[key]};{subtotal}'
             total += subtotal
-            
+
             o(entri, f=berkas)
-        
+
         o(f'\nTotal {total}', f=berkas)
-    
+
     pesanan[int(meja)] = None                                                   # Mengosongkan pesanan
 
 if __name__ == "__main__":

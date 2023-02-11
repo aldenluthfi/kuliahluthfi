@@ -29,7 +29,7 @@ for counter in range(jumlah_tempat):
         #Meng-update tempat favorit dan rating tertinggi saat ini
         tempat_favorit = tempat
         rating_tertinggi = rating
-    
+
     #Menambah rating saat ini ke rating akumulatif
     rating_akumulatif += rating
 

@@ -9,8 +9,8 @@ def main() -> None:
 
     # Jika user belum memberi input STOP
     bentuk_galon: str = input("\nMasukkan bentuk galon yang diinginkan (STOP untuk berhenti): ")
-    while bentuk_galon != "STOP": 
-        
+    while bentuk_galon != "STOP":
+
         # Jika user memberi input tidak valid
         while bentuk_galon not in input_valid:
             bentuk_galon = input("Input tidak benar, masukkan kembali\n\nMasukkan bentuk galon yang diinginkan (STOP untuk berhenti): ")
@@ -18,7 +18,7 @@ def main() -> None:
             # Jika user menghentikan programnya secara prematur
             if bentuk_galon == "STOP":
                 break
-        
+
         else: #Jika sudah valid maka ada input
             ada_input = True
 
@@ -29,7 +29,7 @@ def main() -> None:
             bentuk_galon = input("\n\nMasukkan bentuk galon yang diinginkan (STOP untuk berhenti): ")
 
     output(total_volume_air, ada_input)
-        
+
 # Function untuk menhitung volume balok
 def balok() -> int:
 
@@ -41,7 +41,7 @@ def balok() -> int:
 
 # Function untuk menghitung volume kerucut
 def kerucut() -> int:
-    
+
     jari_jari_balok: float = float(input("Masukkan panjang balok : "))
     tinggi_balok: float = float(input("Masukkan lebar balok : "))
 
@@ -54,7 +54,7 @@ def output(total_volume_air: int, ada_input: bool) -> None:
         print(f"\n{'='*  50}\nTotal volume air yang dikeluarkan adalah : {total_volume_air:.2f}")
         print(f"Total harga yang harus dibayar adalah : Rp{total_volume_air * 700:.2f}\n{'=' * 50}\n")
         print("Terima kasih telah menggunakan Depot Air Minum Dek Depe")
-    
+
     else:
         print(f"\n{'='*  50}\nAnda tidak memasukkan input satupun :(")
         print(f"Terima kasih telah menggunakan Depot Air Minum Dek Depe\n{'=' * 50}")

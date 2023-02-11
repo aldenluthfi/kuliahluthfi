@@ -7,7 +7,7 @@ def search(awal, tujuan, kenal, jarak):                                         
         return jarak[awal]
 
     result = search(kenal[awal], tujuan, kenal, jarak)
-    
+
     return jarak[awal] + result if result != False else False                   # Rekursi
 
 def main():
@@ -15,7 +15,7 @@ def main():
 
     dict_kenalan = {}                                                           # Inisialisasi dictionary kenalan
     dict_jarak = {}                                                             # Inisialisasi dictionary jarak
-    
+
     while True:
         data = input()
 
@@ -23,10 +23,10 @@ def main():
             break
 
         nama_x, kenalan_x, jarak = data.split()
-        
+
         dict_kenalan[nama_x] = kenalan_x                                        # Input kenalan ke dictionary
         dict_jarak[nama_x] = float(jarak)                                       # Input jarak ke dictionary
-    
+
     awal = input('\nMasukkan nama awal: ')
     tujuan = input('Masukkan nama tujuan: ')
 

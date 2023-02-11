@@ -19,7 +19,7 @@ class Restoran:
 
         slit: Callable[[str, str], list[str]] = lambda x, y: x.strip().split(y)
         entri: list[list[str]] = [slit(x, '\n') for x in slit(isi, '===') if x]
-        
+
         self.full_menu: dict[str, list[list[str]]] = {}
         self.harga: dict[str, int] = {}
 
@@ -28,7 +28,7 @@ class Restoran:
             title: tuple[str, ...] = ('MEALS', 'DRINKS', 'SIDES')
             kategori: tuple[str, ...] = ('Kegurihan', 'Kemanisan', 'Keviralan')
 
-            dict_tipe: dict[str, str] = {t: k for t, k in zip(title, kategori)} # Menentukan tipe kategori rating 
+            dict_tipe: dict[str, str] = {t: k for t, k in zip(title, kategori)} # Menentukan tipe kategori rating
             tipe: str = dict_tipe[judul]
 
             self.full_menu[judul] = [['Kode', 'Nama', 'Harga', tipe, 'Jumlah']]
@@ -52,7 +52,7 @@ class Meja:                                                                     
         self.pesanan: dict[str, int] = pesanan
 
 
-class GUI(Restoran, Tk):                                                        
+class GUI(Restoran, Tk):
 
     @staticmethod
     def button_styling(button: Button, text: str) -> None:                      # Stilisasi tombol agar sama
@@ -86,7 +86,7 @@ class GUI(Restoran, Tk):
             return owner.update_pesanan(item, event.widget.get())
 
         variable: IntVar = IntVar()
-        
+
         kombo: Combobox = Combobox(window)
 
         kombo['textvariable'] = variable
@@ -102,7 +102,7 @@ class GUI(Restoran, Tk):
         return kombo
 
     @staticmethod
-    def tombol(owner: Any, window: Any, meja: int, *position: int) -> Button:   # Membuat tombol meja-meja   
+    def tombol(owner: Any, window: Any, meja: int, *position: int) -> Button:   # Membuat tombol meja-meja
 
         x, y = position
         nomor: int = 2*x + y + 1
@@ -193,7 +193,7 @@ class MenuUtama(GUI, Restoran, Tk):                                             
 
         self.frame_buat.pack(expand=True, fill='both', pady=(37.5, 0))
         self.frame_selesai.pack(expand=True, fill='both', pady=(0, 37.5))
-                                        
+
         self.buat: Button = Button(self.frame_buat)                             # Setting tombol
         GUI.button_styling(self.buat, 'Buat Pesanan')
         self.buat['command'] = self.buat_pesanan
@@ -367,10 +367,10 @@ class BuatPesanan(GUI, Restoran, Toplevel):
             msg.showerror(message='Mohon maaf, meja digunakan.', parent=self)
         else:
             self.ubah_meja(new_val)
-            
+
             if valid == 1:
                 self.nomor = new_val
-            
+
             if valid == 1 or valid == 2:
                 self.pesan()
 
