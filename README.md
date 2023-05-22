@@ -1,7 +1,8 @@
 # KuliahLuthfi
 Archive of an Universitas Indonesia Computer Science Major
 ```
-[607M]  KuLi (Kuliah Luthfi)
+[660M]  KuLi (Kuliah Luthfi)
+├── [ 31K]  README.md
 ├── [361M]  Semester 1 (Astaga, Lupa Nametag!)
 │   ├── [174M]  Kumpulan Buku Propaganda Kom(unis)puter
 │   │   ├── [795K]  DDP 1 - Allen B. Downey. Think Python, 2nd Edition, Green Tea Press, 2016.pdf
@@ -10,7 +11,6 @@ Archive of an Universitas Indonesia Computer Science Major
 │   │   ├── [ 22M]  KALKULUS 1 - George B. Thomas, Jr., Maurice D. Weir, Joel R.Hass. Thomas' Calculus Early Transcendentals, 13th Edition, Pearson, 2017.pdf
 │   │   ├── [ 36M]  MATDIS 1 - Kenneth H. Rosen. Discrete Mathematics and Its Applications, 7th International Edition, McGraw-Hill, 2007.pdf
 │   │   └── [904K]  PSD - M. Morris R. Mano, Charles R. Kime, Tom Martin. Logic and Computer Design Fundamentals, 5th Edition, Prentice Hall, 2015.pdf
-│   ├── [ 56K]  Rekap Nilai Upi Semester 1.xlsx
 │   ├── [127M]  Slide Cha-Cha Real Smooth
 │   │   ├── [ 17M]  DDP 1
 │   │   │   ├── [2.2M]  DDP 1 - TOPIK 1 - INTRODUCTION TO PROGRAMMING AND COMPUTER SYSTEMS.pdf
@@ -197,15 +197,15 @@ Archive of an Universitas Indonesia Computer Science Major
 │           ├── [450K]  PSD - TUGAS MANDIRI 7 - ALDEN LUTHFI - 2206028932.pdf
 │           ├── [3.6K]  PSD - TUGAS MANDIRI 8 - ALDEN LUTHFI - 2206028932.circ
 │           └── [1.2M]  PSD - TUGAS MANDIRI 8 - ALDEN LUTHFI - 2206028932.pdf
-├── [246M]  Semester 2 (Sipaling Sibuk Tuh, Masokis!)
+├── [299M]  Semester 2 (Sipaling Sibuk Tuh, Masokis!)
 │   ├── [184M]  Baca Buku Ga Ya, Ya Ga Baca Buku Lah
 │   │   ├── [1.9M]  DDP 2 - Allen B. Downey, C. Mayfield. Think Java, 2nd Edition, Green Tea Press, 2020.pdf
 │   │   ├── [ 24M]  DDP 2 - Y Daniel Yang. Introduction to Java Programming and Data Structures, Global Edition, Pearson, 2020.pdf
 │   │   ├── [ 93M]  KALKULUS 2 - Dale Varberg, Edwin J. Purcell, Steven E. Rigdon. Calculus, 9th Edition, Prentice Hall, 2006.pdf
 │   │   ├── [ 36M]  MATDIS 2 - Kenneth H. Rosen. Discrete Mathematics and Its Applications, 7th International Edition, McGraw-Hill, 2007.pdf
 │   │   └── [ 29M]  POK - David A. Patterson, John L. Hennesy. Computer Organization and Design (the Hardware Software Interface), 5th Edition, Morgan Kauffman, 2014.pdf
-│   ├── [ 20M]  Kenapa? Soalnya Dia Kosong
-│   │   ├── [ 15M]  DDP 2
+│   ├── [ 26M]  Kenapa? Soalnya Dia Kosong
+│   │   ├── [ 20M]  DDP 2
 │   │   │   ├── [1.4M]  DDP 2 - INTRO GITHUB.pdf
 │   │   │   ├── [3.9M]  DDP 2 - LAB 00.pdf
 │   │   │   ├── [283K]  DDP 2 - LAB 01.pdf
@@ -216,14 +216,17 @@ Archive of an Universitas Indonesia Computer Science Major
 │   │   │   ├── [402K]  DDP 2 - LAB 06.pdf
 │   │   │   ├── [559K]  DDP 2 - LAB 07.pdf
 │   │   │   ├── [2.3M]  DDP 2 - LAB 08.pdf
+│   │   │   ├── [1.6M]  DDP 2 - LAB 09.pdf
+│   │   │   ├── [1.1M]  DDP 2 - LAB 10.pdf
 │   │   │   ├── [109K]  DDP 2 - MINI QUIZ 3.pdf
 │   │   │   ├── [485K]  DDP 2 - MINI QUIZ 4.pdf
 │   │   │   ├── [115K]  DDP 2 - MINI QUIZ 5.pdf
 │   │   │   ├── [478K]  DDP 2 - MINI QUIZ 6.pdf
 │   │   │   ├── [1.6M]  DDP 2 - TP 01.pdf
 │   │   │   ├── [2.2M]  DDP 2 - TP 02.pdf
-│   │   │   └── [349K]  DDP 2 - TP 03.pdf
-│   │   ├── [1.5M]  KALKULUS 2
+│   │   │   ├── [349K]  DDP 2 - TP 03.pdf
+│   │   │   └── [2.3M]  DDP 2 - TP 04.pdf
+│   │   ├── [2.0M]  KALKULUS 2
 │   │   │   ├── [ 41K]  KALKULUS 2 - CP 01.pdf
 │   │   │   ├── [ 44K]  KALKULUS 2 - CP 02.pdf
 │   │   │   ├── [ 47K]  KALKULUS 2 - CP 03A.pdf
@@ -232,6 +235,7 @@ Archive of an Universitas Indonesia Computer Science Major
 │   │   │   ├── [ 36K]  KALKULUS 2 - CP 04B.pdf
 │   │   │   ├── [ 84K]  KALKULUS 2 - CP 05.pdf
 │   │   │   ├── [ 72K]  KALKULUS 2 - CP 06A.pdf
+│   │   │   ├── [ 46K]  KALKULUS 2 - CP 06B.pdf
 │   │   │   ├── [169K]  KALKULUS 2 - POP QUIZ 1.pdf
 │   │   │   ├── [162K]  KALKULUS 2 - POP QUIZ 2.pdf
 │   │   │   ├── [160K]  KALKULUS 2 - POP QUIZ 3.pdf
@@ -239,12 +243,14 @@ Archive of an Universitas Indonesia Computer Science Major
 │   │   │   ├── [ 89K]  KALKULUS 2 - POP QUIZ 5.pdf
 │   │   │   ├── [ 69K]  KALKULUS 2 - POP QUIZ 6.pdf
 │   │   │   ├── [129K]  KALKULUS 2 - POP QUIZ 7.pdf
-│   │   │   └── [158K]  KALKULUS 2 - POP QUIZ 8.pdf
-│   │   ├── [368K]  MATDIS 2
+│   │   │   ├── [158K]  KALKULUS 2 - POP QUIZ 8.pdf
+│   │   │   └── [514K]  KALKULUS 2 - POP QUIZ 9.pdf
+│   │   ├── [669K]  MATDIS 2
 │   │   │   ├── [103K]  MATDIS 2 - PR 1.pdf
 │   │   │   ├── [143K]  MATDIS 2 - PR 2.pdf
-│   │   │   └── [122K]  MATDIS 2 - PR 3.pdf
-│   │   └── [2.6M]  POK
+│   │   │   ├── [122K]  MATDIS 2 - PR 3.pdf
+│   │   │   └── [301K]  MATDIS 2 - PR 4.pdf
+│   │   └── [3.2M]  POK
 │   │       ├── [687K]  POK - GREEN SHEET AVR.pdf
 │   │       ├── [157K]  POK - GREEN SHEET MIPS.pdf
 │   │       ├── [440K]  POK - GUIDE TO AVR.pdf
@@ -255,7 +261,10 @@ Archive of an Universitas Indonesia Computer Science Major
 │   │       ├── [ 50K]  POK - LAB 03 MIPS.pdf
 │   │       ├── [ 54K]  POK - LAB 04 MIPS.pdf
 │   │       ├── [ 80K]  POK - LAB 05 AVR.pdf
+│   │       ├── [ 98K]  POK - LAB 06 AVR.pdf
+│   │       ├── [ 84K]  POK - LAB 07 AVR.pdf
 │   │       ├── [ 67K]  POK - MIPS DATAPATH.png
+│   │       ├── [451K]  POK - MODUL AVR 0.pdf
 │   │       ├── [373K]  POK - MODUL MIPS 0.pdf
 │   │       ├── [ 49K]  POK - MODUL MIPS 1.pdf
 │   │       ├── [130K]  POK - MODUL MIPS 2.pdf
@@ -263,9 +272,17 @@ Archive of an Universitas Indonesia Computer Science Major
 │   │       ├── [ 79K]  POK - TUGAS 2.pdf
 │   │       ├── [ 52K]  POK - TUGAS 3.pdf
 │   │       └── [ 56K]  POK - TUGAS 4.pdf
-│   ├── [ 17M]  Kumpulan Perosotan
+│   ├── [ 59M]  Kumpulan Perosotan
 │   │   ├── [  64]  DDP 2
-│   │   ├── [  64]  KALKULUS 2
+│   │   ├── [ 42M]  KALKULUS 2
+│   │   │   ├── [1.3M]  KALKULUS 2 - TOPIK 1.1 - REVIEW TURUNAN.pdf
+│   │   │   ├── [1.3M]  KALKULUS 2 - TOPIK 1.2 - REVIEW INTEGRAL.pdf
+│   │   │   ├── [3.1M]  KALKULUS 2 - TOPIK 2 - INTEGRAL TAK WAJAR.pdf
+│   │   │   ├── [9.1M]  KALKULUS 2 - TOPIK 3 - DERET TAK HINGGA.pdf
+│   │   │   ├── [1.9M]  KALKULUS 2 - TOPIK 4.1 - IRISAN KERUCUT.pdf
+│   │   │   ├── [3.5M]  KALKULUS 2 - TOPIK 4.2 - KOORDINAT POLAR.pdf
+│   │   │   ├── [ 11M]  KALKULUS 2 - TOPIK 5 - KALKULUS MULTIVARIABLE.pdf
+│   │   │   └── [ 11M]  KALKULUS 2 - TOPIK 6 - INTEGRAL LIPAT.pdf
 │   │   ├── [ 17M]  MATDIS 2
 │   │   │   ├── [574K]  MATDIS 2 - TOPIK 1.1 - MODULAR ARITHMETICS (EN).pdf
 │   │   │   ├── [1.7M]  MATDIS 2 - TOPIK 1.1~1.2 - ARITMATIKA MODULAR DAN FPB (ID).pdf
@@ -291,116 +308,137 @@ Archive of an Universitas Indonesia Computer Science Major
 │   │   │   ├── [454K]  MATDIS 2 - TOPIK 3.7 - PARTIAL ORDER (EN).pdf
 │   │   │   └── [795K]  MATDIS 2 - TOPIK 3.7 - RELASI TERURUT (ID).pdf
 │   │   └── [  64]  POK
-│   ├── [ 25M]  Nugas Nugus Nugas Nugus
-│   │   ├── [ 73K]  DDP 2
-│   │   │   ├── [2.9K]  DDP2 - LAB 00 - ALDEN LUTHFI - 2206028932
-│   │   │   │   ├── [1.8K]  java
-│   │   │   │   │   ├── [ 936]  Nilai.java
-│   │   │   │   │   └── [ 755]  PangkatFactorial.java
-│   │   │   │   └── [ 999]  python
-│   │   │   │       ├── [ 461]  nilai.py
-│   │   │   │       └── [ 410]  pangkat_factorial.py
-│   │   │   ├── [2.0K]  DDP2 - LAB 01 - ALDEN LUTHFI - 2206028932
-│   │   │   │   └── [1.9K]  Lab01.java
-│   │   │   ├── [2.9K]  DDP2 - LAB 02 - ALDEN LUTHFI - 2206028932
-│   │   │   │   └── [2.8K]  Lab02.java
-│   │   │   ├── [8.9K]  DDP2 - LAB 03 - ALDEN LUTHFI - 2206028932
-│   │   │   │   └── [8.8K]  Lab03.java
-│   │   │   ├── [ 13K]  DDP2 - LAB 04 - ALDEN LUTHFI - 2206028932
-│   │   │   │   ├── [ 974]  Barang.java
-│   │   │   │   ├── [6.2K]  Diskonpedia.java
-│   │   │   │   ├── [4.6K]  Pembeli.java
-│   │   │   │   └── [1.2K]  Pesanan.java
-│   │   │   ├── [ 12K]  DDP2 - LAB 05 - ALDEN LUTHFI - 2206028932
-│   │   │   │   ├── [2.5K]  Employee.java
-│   │   │   │   ├── [1.6K]  Engineer.java
-│   │   │   │   ├── [1.4K]  Manager.java
-│   │   │   │   ├── [5.0K]  PacilWorks.java
-│   │   │   │   └── [1.6K]  Secretary.java
-│   │   │   ├── [7.2K]  DDP2 - LAB 06 - ALDEN LUTHFI - 2206028932
-│   │   │   │   ├── [1.5K]  Beverage.java
-│   │   │   │   ├── [1.2K]  Coffee.java
-│   │   │   │   ├── [3.2K]  Starcil.java
-│   │   │   │   └── [1.1K]  Tea.java
-│   │   │   ├── [8.5K]  DDP2 - LAB 07 - ALDEN LUTHFI - 2206028932
-│   │   │   │   ├── [5.2K]  Main.java
-│   │   │   │   ├── [2.6K]  card
-│   │   │   │   │   ├── [1.4K]  Card.java
-│   │   │   │   │   ├── [ 618]  ElectronicCard.java
-│   │   │   │   │   ├── [ 397]  GiftCard.java
-│   │   │   │   │   └── [  86]  Topupable.java
-│   │   │   │   └── [ 532]  item
-│   │   │   │       └── [ 436]  Item.java
-│   │   │   ├── [2.8K]  DDP2 - LAB 08 - ALDEN LUTHFI - 2206028932
-│   │   │   │   └── [2.7K]  Playlist.java
-│   │   │   ├── [ 666]  DDP2 - MINI QUIZ 3 - ALDEN LUTHFI - 2206028932
-│   │   │   │   └── [ 570]  MiniQuiz3.java
-│   │   │   ├── [6.1K]  DDP2 - MINI QUIZ 4 - ALDEN LUTHFI - 2206028932
-│   │   │   │   ├── [1.8K]  Author.java
-│   │   │   │   ├── [2.9K]  Journal.java
-│   │   │   │   ├── [ 551]  TestAuthor.java
-│   │   │   │   └── [ 753]  TestJournal.java
-│   │   │   ├── [2.2K]  DDP2 - MINI QUIZ 5 - ALDEN LUTHFI - 2206028932
-│   │   │   │   ├── [ 566]  Student.java
-│   │   │   │   └── [1.5K]  StudentTest.java
-│   │   │   └── [2.5K]  DDP2 - MINI QUIZ 6 - ALDEN LUTHFI - 2206028932
-│   │   │       ├── [ 564]  Burung.java
-│   │   │       ├── [ 479]  Harimau.java
-│   │   │       ├── [ 924]  Hewan.java
-│   │   │       └── [ 392]  Kelinci.java
-│   │   ├── [9.3M]  KALKULUS 2
-│   │   │   ├── [244K]  KALKULUS 2 - CP 01 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [173K]  KALKULUS 2 - CP 02 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [188K]  KALKULUS 2 - CP 03A - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [115K]  KALKULUS 2 - CP 03B - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [128K]  KALKULUS 2 - CP 04A - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [505K]  KALKULUS 2 - CP 04B - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [176K]  KALKULUS 2 - CP 05 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [365K]  KALKULUS 2 - CP 06A - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [217K]  KALKULUS 2 - POP QUIZ 01 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [239K]  KALKULUS 2 - POP QUIZ 02 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [212K]  KALKULUS 2 - POP QUIZ 03 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [119K]  KALKULUS 2 - POP QUIZ 04 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [196K]  KALKULUS 2 - POP QUIZ 05 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [357K]  KALKULUS 2 - POP QUIZ 06 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [415K]  KALKULUS 2 - POP QUIZ 07 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [2.2M]  KALKULUS 2 - PR MERINGKAS 1 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [989K]  KALKULUS 2 - PR MERINGKAS 2 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [651K]  KALKULUS 2 - PR MERINGKAS 3 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   └── [1.9M]  KALKULUS 2 - PR MERINGKAS 5 - ALDEN LUTHFI - 2206028932.pdf
-│   │   ├── [4.8M]  MATDIS 2
-│   │   │   ├── [185K]  MATDIS 2 - LATIHAN KOMBINATORIK DENGAN FUNGSI PEMBANGKIT - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [ 86K]  MATDIS 2 - LATIHAN PEMODELAN - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [1.9M]  MATDIS 2 - PR 1 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   └── [2.7M]  MATDIS 2 - PR 2 - ALDEN LUTHFI - 2206028932.pdf
-│   │   ├── [5.0M]  MPKT
-│   │   │   ├── [ 13K]  MPKT - BORANG PENILAIAN ANTARTEMAN PEKAN 2 - ALDEN LUTHFI - 2206028932.xlsx
-│   │   │   ├── [4.8M]  MPKT - LTK PEKAN 2 - FG1.pptx
-│   │   │   ├── [ 82K]  MPKT - LTM PEKAN 1 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   ├── [ 44K]  MPKT - LTM PEKAN 3 - ALDEN LUTHFI - 2206028932.pdf
-│   │   │   └── [ 71K]  MPKT - LTM PEKAN PERSIAPAN - ALDEN LUTHFI - 2206028932.pdf
-│   │   └── [6.1M]  POK
-│   │       ├── [ 18K]  POK - LAB 00 - ALDEN LUTHFI - 2206028932
-│   │       │   ├── [4.3K]  POK - LAB 0 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
-│   │       │   ├── [5.5K]  POK - LAB 0 LATIHAN 2 - ALDEN LUTHFI - 2206028932.asm
-│   │       │   └── [7.5K]  POK - LAB 0 LATIHAN 3 - ALDEN LUTHFI - 2206028932.asm
-│   │       ├── [ 14K]  POK - LAB 01 - ALDEN LUTHFI - 2206028932
-│   │       │   ├── [4.6K]  POK - LAB 1 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
-│   │       │   └── [9.5K]  POK - LAB 1 LATIHAN 2 - ALDEN LUTHFI - 2206028932.asm
-│   │       ├── [5.8K]  POK - LAB 02 - ALDEN LUTHFI - 2206028932
-│   │       │   └── [5.7K]  POK - LAB 2 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
-│   │       ├── [3.9K]  POK - LAB 03 - ALDEN LUTHFI - 2206028932
-│   │       │   └── [3.8K]  POK - LAB 3 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
-│   │       ├── [ 10K]  POK - LAB 04 - ALDEN LUTHFI - 2206028932
-│   │       │   └── [ 10K]  POK - LAB 4 - ALDEN LUTHFI - 2206028932.xlsx
-│   │       ├── [1.7K]  POK - LAB 05 - ALDEN LUTHFI - 2206028932
-│   │       │   ├── [ 688]  POK - LAB 5 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
-│   │       │   └── [ 896]  POK - LAB 5 LATIHAN 2 - ALDEN LUTHFI - 2206028932.asm
-│   │       ├── [1.8M]  POK - TUGAS 1 - ALDEN LUTHFI - 2206028932.pdf
-│   │       ├── [2.4M]  POK - TUGAS 2 - ALDEN LUTHFI - 2206028932.pdf
-│   │       ├── [1.1M]  POK - TUGAS 3 - ALDEN LUTHFI - 2206028932.pdf
-│   │       └── [730K]  POK - TUGAS 4 - ALDEN LUTHFI - 2206028932.pdf
-│   └── [ 58K]  Rekap Nilai Upi Semester 2.xlsx
+│   └── [ 30M]  Nugas Nugus Nugas Nugus
+│       ├── [100K]  DDP 2
+│       │   ├── [2.9K]  DDP2 - LAB 00 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [1.8K]  java
+│       │   │   │   ├── [ 936]  Nilai.java
+│       │   │   │   └── [ 755]  PangkatFactorial.java
+│       │   │   └── [ 999]  python
+│       │   │       ├── [ 461]  nilai.py
+│       │   │       └── [ 410]  pangkat_factorial.py
+│       │   ├── [2.0K]  DDP2 - LAB 01 - ALDEN LUTHFI - 2206028932
+│       │   │   └── [1.9K]  Lab01.java
+│       │   ├── [2.9K]  DDP2 - LAB 02 - ALDEN LUTHFI - 2206028932
+│       │   │   └── [2.8K]  Lab02.java
+│       │   ├── [8.9K]  DDP2 - LAB 03 - ALDEN LUTHFI - 2206028932
+│       │   │   └── [8.8K]  Lab03.java
+│       │   ├── [ 13K]  DDP2 - LAB 04 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [ 974]  Barang.java
+│       │   │   ├── [6.2K]  Diskonpedia.java
+│       │   │   ├── [4.6K]  Pembeli.java
+│       │   │   └── [1.2K]  Pesanan.java
+│       │   ├── [ 12K]  DDP2 - LAB 05 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [2.5K]  Employee.java
+│       │   │   ├── [1.6K]  Engineer.java
+│       │   │   ├── [1.4K]  Manager.java
+│       │   │   ├── [5.0K]  PacilWorks.java
+│       │   │   └── [1.6K]  Secretary.java
+│       │   ├── [7.2K]  DDP2 - LAB 06 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [1.5K]  Beverage.java
+│       │   │   ├── [1.2K]  Coffee.java
+│       │   │   ├── [3.2K]  Starcil.java
+│       │   │   └── [1.1K]  Tea.java
+│       │   ├── [8.5K]  DDP2 - LAB 07 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [5.2K]  Main.java
+│       │   │   ├── [2.6K]  card
+│       │   │   │   ├── [1.4K]  Card.java
+│       │   │   │   ├── [ 618]  ElectronicCard.java
+│       │   │   │   ├── [ 397]  GiftCard.java
+│       │   │   │   └── [  86]  Topupable.java
+│       │   │   └── [ 532]  item
+│       │   │       └── [ 436]  Item.java
+│       │   ├── [2.8K]  DDP2 - LAB 08 - ALDEN LUTHFI - 2206028932
+│       │   │   └── [2.7K]  Playlist.java
+│       │   ├── [ 16K]  DDP2 - LAB 09 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [4.2K]  MoneyInput.java
+│       │   │   ├── [1.5K]  ProgramState.java
+│       │   │   ├── [6.7K]  Purchase.java
+│       │   │   └── [3.9K]  VendingMachine.java
+│       │   ├── [ 10K]  DDP2 - LAB 10 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [ 426]  DDPTubeVideo.java
+│       │   │   ├── [1.0K]  Movie.java
+│       │   │   ├── [ 694]  Video.java
+│       │   │   ├── [ 943]  VideoList.java
+│       │   │   └── [7.1K]  VideoPlayer.java
+│       │   ├── [ 666]  DDP2 - MINI QUIZ 3 - ALDEN LUTHFI - 2206028932
+│       │   │   └── [ 570]  MiniQuiz3.java
+│       │   ├── [6.1K]  DDP2 - MINI QUIZ 4 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [1.8K]  Author.java
+│       │   │   ├── [2.9K]  Journal.java
+│       │   │   ├── [ 551]  TestAuthor.java
+│       │   │   └── [ 753]  TestJournal.java
+│       │   ├── [2.2K]  DDP2 - MINI QUIZ 5 - ALDEN LUTHFI - 2206028932
+│       │   │   ├── [ 566]  Student.java
+│       │   │   └── [1.5K]  StudentTest.java
+│       │   └── [2.5K]  DDP2 - MINI QUIZ 6 - ALDEN LUTHFI - 2206028932
+│       │       ├── [ 564]  Burung.java
+│       │       ├── [ 479]  Harimau.java
+│       │       ├── [ 924]  Hewan.java
+│       │       └── [ 392]  Kelinci.java
+│       ├── [ 12M]  KALKULUS 2
+│       │   ├── [244K]  KALKULUS 2 - CP 01 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [173K]  KALKULUS 2 - CP 02 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [188K]  KALKULUS 2 - CP 03A - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [115K]  KALKULUS 2 - CP 03B - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [128K]  KALKULUS 2 - CP 04A - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [505K]  KALKULUS 2 - CP 04B - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [176K]  KALKULUS 2 - CP 05 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [365K]  KALKULUS 2 - CP 06A - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [104K]  KALKULUS 2 - CP 06B - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [217K]  KALKULUS 2 - POP QUIZ 01 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [239K]  KALKULUS 2 - POP QUIZ 02 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [212K]  KALKULUS 2 - POP QUIZ 03 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [119K]  KALKULUS 2 - POP QUIZ 04 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [196K]  KALKULUS 2 - POP QUIZ 05 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [357K]  KALKULUS 2 - POP QUIZ 06 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [415K]  KALKULUS 2 - POP QUIZ 07 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [339K]  KALKULUS 2 - POP QUIZ 08 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [661K]  KALKULUS 2 - POP QUIZ 09 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [2.2M]  KALKULUS 2 - PR MERINGKAS 1 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [989K]  KALKULUS 2 - PR MERINGKAS 2 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [651K]  KALKULUS 2 - PR MERINGKAS 3 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [1.9M]  KALKULUS 2 - PR MERINGKAS 5 - ALDEN LUTHFI - 2206028932.pdf
+│       │   └── [1.7M]  KALKULUS 2 - PR MERINGKAS 6 - ALDEN LUTHFI - 2206028932.pdf
+│       ├── [7.1M]  MATDIS 2
+│       │   ├── [286K]  MATDIS 2 - LATIHAN GRAF - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [185K]  MATDIS 2 - LATIHAN KOMBINATORIK DENGAN FUNGSI PEMBANGKIT - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [ 86K]  MATDIS 2 - LATIHAN PEMODELAN - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [1.9M]  MATDIS 2 - PR 1 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [2.7M]  MATDIS 2 - PR 2 - ALDEN LUTHFI - 2206028932.pdf
+│       │   └── [2.0M]  MATDIS 2 - PR 3 - ALDEN LUTHFI - 2206028932.pdf
+│       ├── [5.0M]  MPKT
+│       │   ├── [ 13K]  MPKT - BORANG PENILAIAN ANTARTEMAN - ALDEN LUTHFI - 2206028932.xlsx
+│       │   ├── [4.8M]  MPKT - LTK PEKAN 2 - FG1.pptx
+│       │   ├── [ 82K]  MPKT - LTM PEKAN 1 - ALDEN LUTHFI - 2206028932.pdf
+│       │   ├── [ 44K]  MPKT - LTM PEKAN 3 - ALDEN LUTHFI - 2206028932.pdf
+│       │   └── [ 71K]  MPKT - LTM PEKAN PERSIAPAN - ALDEN LUTHFI - 2206028932.pdf
+│       └── [6.1M]  POK
+│           ├── [ 18K]  POK - LAB 00 - ALDEN LUTHFI - 2206028932
+│           │   ├── [4.3K]  POK - LAB 0 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
+│           │   ├── [5.5K]  POK - LAB 0 LATIHAN 2 - ALDEN LUTHFI - 2206028932.asm
+│           │   └── [7.5K]  POK - LAB 0 LATIHAN 3 - ALDEN LUTHFI - 2206028932.asm
+│           ├── [ 14K]  POK - LAB 01 - ALDEN LUTHFI - 2206028932
+│           │   ├── [4.6K]  POK - LAB 1 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
+│           │   └── [9.5K]  POK - LAB 1 LATIHAN 2 - ALDEN LUTHFI - 2206028932.asm
+│           ├── [5.8K]  POK - LAB 02 - ALDEN LUTHFI - 2206028932
+│           │   └── [5.7K]  POK - LAB 2 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
+│           ├── [3.9K]  POK - LAB 03 - ALDEN LUTHFI - 2206028932
+│           │   └── [3.8K]  POK - LAB 3 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
+│           ├── [ 10K]  POK - LAB 04 - ALDEN LUTHFI - 2206028932
+│           │   └── [ 10K]  POK - LAB 4 - ALDEN LUTHFI - 2206028932.xlsx
+│           ├── [1.7K]  POK - LAB 05 - ALDEN LUTHFI - 2206028932
+│           │   ├── [ 688]  POK - LAB 5 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
+│           │   └── [ 896]  POK - LAB 5 LATIHAN 2 - ALDEN LUTHFI - 2206028932.asm
+│           ├── [1.5K]  POK - LAB 06 - ALDEN LUTHFI - 2206028932
+│           │   └── [1.3K]  POK - LAB 6 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
+│           ├── [10.0K]  POK - LAB 07 - ALDEN LUTHFI - 2206028932
+│           │   ├── [4.6K]  POK - LAB 7 LATIHAN 1 - ALDEN LUTHFI - 2206028932.asm
+│           │   └── [5.2K]  POK - LAB 7 LATIHAN 2 - ALDEN LUTHFI - 2206028932.asm
+│           ├── [1.8M]  POK - TUGAS 1 - ALDEN LUTHFI - 2206028932.pdf
+│           ├── [2.4M]  POK - TUGAS 2 - ALDEN LUTHFI - 2206028932.pdf
+│           ├── [1.1M]  POK - TUGAS 3 - ALDEN LUTHFI - 2206028932.pdf
+│           └── [730K]  POK - TUGAS 4 - ALDEN LUTHFI - 2206028932.pdf
 ├── [  64]  Semester 2.5 (Sadak-Sodok Sana-Sini!)
 ├── [  64]  Semester 3 (Woi Asdos, Minimal Waras!)
 ├── [  64]  Semester 4
