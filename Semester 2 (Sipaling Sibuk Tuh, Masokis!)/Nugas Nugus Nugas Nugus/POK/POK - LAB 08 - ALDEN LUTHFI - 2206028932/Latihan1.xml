@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<HAPSIM>
+   <General>
+      <Build>2005</Build>
+      <Position>
+         <top>261</top>
+         <bottom>793</bottom>
+         <left>1181</left>
+         <right>2139</right>
+      </Position>
+      <StayOnTop>1</StayOnTop>
+      <Target>ATmega8515</Target>
+   </General>
+   <Views>
+      <Buttons>
+         <Name>Buttons1</Name>
+         <Position>
+            <top>3</top>
+            <left>145</left>
+         </Position>
+         <Config index="0">
+            <Name>INT0</Name>
+            <PortPin>
+               <Port>PORTD</Port>
+               <Bit>2</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="1">
+            <Name>INT1</Name>
+            <PortPin>
+               <Port>PORTD</Port>
+               <Bit>3</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="2">
+            <Name>Button2</Name>
+            <PortPin>
+               <Port>PORTD</Port>
+               <Bit>4</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="3">
+            <Name>Button3</Name>
+            <PortPin>
+               <Port>PORTD</Port>
+               <Bit>5</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <TrinaryGroupEnable index="0">0</TrinaryGroupEnable>
+         <TrinaryGroupEnable index="1">0</TrinaryGroupEnable>
+      </Buttons>
+      <LEDs>
+         <Name>LEDs1</Name>
+         <Position>
+            <top>2</top>
+            <left>4</left>
+         </Position>
+         <Config index="0">
+            <Color>Red</Color>
+            <Name>Merah</Name>
+            <PortPin>
+               <Port>PORTB</Port>
+               <Bit>0</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="1">
+            <Color>Green</Color>
+            <Name>Hijau</Name>
+            <PortPin>
+               <Port>PORTB</Port>
+               <Bit>1</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="2">
+            <Color>Yellow</Color>
+            <Name>Kuning</Name>
+            <PortPin>
+               <Port>PORTB</Port>
+               <Bit>2</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="3">
+            <Color>Blue</Color>
+            <Name>Biru</Name>
+            <PortPin>
+               <Port>PORTB</Port>
+               <Bit>3</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="4">
+            <Color>Blue</Color>
+            <Name>Blue</Name>
+            <PortPin>
+               <Port>PORTB</Port>
+               <Bit>4</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="5">
+            <Color>Yellow</Color>
+            <Name>Yellow</Name>
+            <PortPin>
+               <Port>PORTB</Port>
+               <Bit>5</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="6">
+            <Color>Green</Color>
+            <Name>Green</Name>
+            <PortPin>
+               <Port>PORTB</Port>
+               <Bit>6</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+         <Config index="7">
+            <Color>Red</Color>
+            <Name>Red</Name>
+            <PortPin>
+               <Port>PORTB</Port>
+               <Bit>7</Bit>
+            </PortPin>
+            <Invert>0</Invert>
+         </Config>
+      </LEDs>
+   </Views>
+</HAPSIM>
