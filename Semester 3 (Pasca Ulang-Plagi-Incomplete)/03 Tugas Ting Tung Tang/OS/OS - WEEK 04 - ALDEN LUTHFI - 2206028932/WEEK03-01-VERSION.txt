@@ -1,0 +1,33 @@
+OK:    Coreutils 9.1    >= 7.0
+OK:    Bash      5.2.15 >= 3.2
+OK:    Binutils  2.40   >= 2.13.1
+OK:    Bison     3.8.2  >= 2.7
+OK:    Diffutils 3.8    >= 2.8.1
+OK:    Findutils 4.9.0  >= 4.2.31
+OK:    Gawk      5.2.1  >= 4.0.1
+OK:    GCC       12.2.0 >= 5.1
+OK:    GCC (C++) 12.2.0 >= 5.1
+OK:    Grep      3.8    >= 2.5.1a
+OK:    Gzip      1.12   >= 1.3.12
+OK:    M4        1.4.19 >= 1.4.10
+OK:    Make      4.3    >= 4.0
+OK:    Patch     2.7.6  >= 2.5.4
+OK:    Perl      5.36.0 >= 5.8.8
+OK:    Python    3.11.2 >= 3.4
+OK:    Sed       4.9    >= 4.1.5
+OK:    Tar       1.34   >= 1.22
+OK:    Texinfo   6.8    >= 5.0
+OK:    Xz        5.4.1  >= 5.0.0
+OK:    Linux Kernel 6.1.0 >= 4.14
+OK:    Linux Kernel supports UNIX 98 PTY
+Aliases:
+OK:    awk  is GNU
+OK:    yacc is Bison
+OK:    sh   is Bash
+Compiler check:
+OK:    g++ works
+ZCZC 7795E91 WEEKSQ 03 01
+ZCZC 77977DD VERSUM 73:3F6FA35E 73:3F6FA35E
+ZCZC 779E362 VERINC 48:16D032A7 48:16D032A7
+ZCZC 7795EC8 SCRIPT # REV07: Mon 11 Sep 2023 17:00
+ZCZC 7796AC9 RESULT ===== RESULT IN /home/aldenluthfi/RESULT/W03/WEEK03-01-VERSION.txt =====
