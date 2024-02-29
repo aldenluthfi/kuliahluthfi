@@ -1,0 +1,11 @@
+application {
+    mainClass.set('assignments.assignment2.MainMenu')
+}
+
+run {
+    standardInput = System.in
+}
+
+dependencies {
+    implementation project(':assignment1')
+}

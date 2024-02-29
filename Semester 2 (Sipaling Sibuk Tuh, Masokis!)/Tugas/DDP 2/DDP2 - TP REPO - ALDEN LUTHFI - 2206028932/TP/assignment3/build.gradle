@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testImplementation 'org.mockito:mockito-core:5.2.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.0.0'
+    implementation project(':assignment1')
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass.set('assignments.assignment3.MainMenu')
+}
+
+run {
+    standardInput = System.in
+}

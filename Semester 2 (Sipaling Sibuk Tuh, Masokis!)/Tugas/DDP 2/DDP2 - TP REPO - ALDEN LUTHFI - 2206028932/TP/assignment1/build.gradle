@@ -1,0 +1,7 @@
+application {
+    mainClass.set('assignments.assignment1.NotaGenerator')
+}
+
+run {
+    standardInput = System.in
+}
