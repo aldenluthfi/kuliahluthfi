@@ -1,0 +1,10 @@
+aaaaaa
+aaaacb
+aaaacc
+aaacba
+aaacca
+aabaca
+aacbaa
+aacbcc
+aaccaa
+aacccc
