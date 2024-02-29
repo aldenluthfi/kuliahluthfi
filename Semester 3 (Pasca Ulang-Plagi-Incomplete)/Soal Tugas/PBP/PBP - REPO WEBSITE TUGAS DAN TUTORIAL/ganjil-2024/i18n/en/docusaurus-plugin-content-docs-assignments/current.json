@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Tugas Individu": {
+    "message": "Individual",
+    "description": "The label for category Tugas Individu in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tugas Kelompok": {
+    "message": "Group",
+    "description": "The label for category Tugas Kelompok in sidebar tutorialSidebar"
+  }
+}

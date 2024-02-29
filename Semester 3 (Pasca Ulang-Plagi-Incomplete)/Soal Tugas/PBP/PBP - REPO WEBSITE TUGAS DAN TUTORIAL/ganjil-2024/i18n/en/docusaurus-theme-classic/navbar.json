@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "PBP Ganjil 23/24",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "PBP Ganjil 23/24",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tugas": {
+    "message": "Assignment",
+    "description": "Navbar item with label Tugas"
+  },
+  "item.label.Playground": {
+    "message": "Playground",
+    "description": "Navbar item with label Playground"
+  }
+}

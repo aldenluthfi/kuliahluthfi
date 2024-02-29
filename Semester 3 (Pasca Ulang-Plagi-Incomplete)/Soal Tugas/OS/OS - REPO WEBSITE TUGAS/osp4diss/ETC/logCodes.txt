@@ -1,0 +1,74 @@
+# REV08: Thu 09 Feb 2023 08:00
+# REV07: Tue 28 Jun 2022 15:00
+# REV06: Wed 07 Jul 2021 20:00
+# REV03: Thu 24 Sep 2020 11:00
+# REV01: Sat 12 Sep 2020 00:00
+# START: Tue 08 Sep 2020 11:00
+# ##########################################
+# https://osp4diss.vlsm.org/ETC/logCodes.txt
+# ##########################################
+#
+# Log Format
+# ZCZC WEEK# MINUTES LogCode Description
+# LogCode + Description List
+
+L00 General, etc.
+L01 SCELE/Discord related
+L02 CLASSROOM/ZOOM meetings related
+L03 GitHub and git related, including commit, push, pull
+L04 GitHub Pages related
+L05 Quiz related including studying
+L06 References/Books/Documents/Browsing/GSGS related
+L07 Demo related
+L08 OS Chat related (WA, LIME, Telegram, Signal) with AsDos, Friend, etc. See also L01.
+L09 Assignment in General
+L10 Assignment #00
+L11 Assignment #01
+L12 Assignment #02
+L13 Assignment #03
+L14 Assignment #04
+L15 Assignment #05
+L16 Assignment #06
+L17 Assignment #07
+L18 Assignment #08
+L19 Assignment #09
+L20 Assignment #10
+L21 Trying something
+L22 Linux CLI including tar, etc.
+L23 Bash, Regex, SED, AWK.
+L24 Scripting in general.
+L25 C-language including Make.
+L26 GnuPG, key-gen, encrypt/decrypt.
+L27 SSH, key-gen, tunneling, putty, winscp
+L28 Jekyll, including Ruby.
+L29 OS Shoping related: buy a laptop, flashdisk, etc.
+L30 Udacity: study, etc.
+L31 VirtualBox: install GNU/Linux, etc.
+L32 YouTube: watching OS related topics, etc.
+L33 Podcast incl. Spotify: listening OS related topics, etc.
+L40 TXT/ related in general.
+L41 TXT/mylog.txt related.
+L42 TXT/mypubkey.txt related. See also L27.
+L43 TXT/myrank.tex related, including peer review.
+L44 TXT/myscript.sh related. See also L25, L24.
+L45 TXT/SHA256SUM related
+L60 Install/Reinstall/Restore/Backup Desktop or Laptop
+L61 Install/Reinstall/Restore/Backup Virtual Box
+L62 Install/Reinstall/Restore/Backup Virtual Debian Guest
+L63 Fixing Hardware Problems
+L64 Helping a friend (OS related problem)
+L70 Studying for other courses.
+L71 Working (General)
+L72 Online Related Job, merchant, etc.
+L73 Gaming including Board Games.
+L80 Waching: Movie, YouTube, TV, Netflix, etc.
+L81 Listening: Radio, Music, etc.
+L82 Reading Book (paper or online)
+L83 Pets: feeding, playing, etc
+L84 Relax, Rest, Nap, and Sleep
+L85 Baby Sit and/or Oma/Opa Sit
+L86 House chore, including helping mom, pap, uncle, aunty, jaga warung, jualan kue, etc.
+L87 Breakfast/Lunch/Dinner/Snake
+L88 Workout/Sport/Exercise/ETC.
+L98 Else that is not related with this Operating Systems class.
+L99 Other (...)

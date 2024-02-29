@@ -1,0 +1,31 @@
+title: Operating System Programming 4DISS
+description: (REV358--31-Jan-2024)
+      <br>Welcome to the Operating System Programming for DISS site.
+      The following is a step-by-step guide to set up a Virtual Debian Guest on VirtualBox.
+      This site has been managed by <a href="https://vlsm.org/">VauLSMorg</a> since 2020.
+      <br>This is the WAY!
+google_analytics: G-0T9E7XFFYH
+disc: You are free to share, copy and redistribute the material of this site 
+      in any medium or format for any purpose, even commercially. 
+      Please give appropriate credit, provide a link to the page, 
+      and indicate if changes were made. You may do so in any reasonable manner. 
+      You should not apply legal terms or technological measures, 
+      that legally restrict others from doing anything that is permited here.
+author: Mr. Y. Yoda
+show_downloads: false
+theme: jekyll-theme-hacker
+sitemap: true
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+social:
+  name: URLs
+  links:
+    - https://https://github.com/os2xx/osp4diss/
+
+# github:
+#    zip_url: https://github.com/rms46/...
+#    tar_url: https://github.com/rms46/...
+
+github: [metadata]
+

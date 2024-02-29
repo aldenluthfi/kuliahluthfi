@@ -1,0 +1,13 @@
+#!/bin/bash
+# REV04: Wed 14 Feb 2024 20:00
+# REV03: Wed 03 Jan 2024 10:00
+# REV02: Mon 21 Feb 2022 18:00
+# REV01: Wed 16 Jun 2021 14:00
+# START: Wed 03 Feb 2021 16:00
+
+rm -fv Gemfile.lock
+bundle install
+bundle clean --force
+bundle install
+bundle update
+

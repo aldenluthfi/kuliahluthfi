@@ -1,0 +1,20 @@
+@import "{{ site.theme }}";
+
+td {
+  padding-top:      3px;
+  padding-bottom:   3px;
+}
+
+li {
+  padding-top:      3px;
+  padding-bottom:   3px;
+}
+
+footer {
+  display: none !important;
+}
+
+.btn {
+  display: none !important;
+}
+

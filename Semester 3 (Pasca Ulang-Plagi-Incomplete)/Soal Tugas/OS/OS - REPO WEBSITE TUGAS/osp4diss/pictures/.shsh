@@ -1,0 +1,6 @@
+#!/bin/bash
+# Thu 23 Dec 2021 08:31:42 WIB
+
+for II in * ; do
+  grep -q $II ../*.md || { mv $II .tmp/ ; echo $II; }
+done
