@@ -1,0 +1,48 @@
+name: Pre-Release
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on pull request events but only for the main branch
+  pull_request:
+    branches: [main]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "Build and Pre-Release APK"
+  releases:
+    name: Build and Pre-Release APK
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '11'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Get packages
+        run: flutter pub get
+
+      - name: Generate Java keystore
+        env:
+          KEY_JKS: ${{ secrets.KEY_JKS }}
+        run: echo "$KEY_JKS" | base64 --decode > release-keystore.jks
+
+      - name: Build APK
+        env:
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: flutter build apk --split-per-abi
+
+      - name: Pre-release APK by uploading it to Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: APKS
+          path: build/app/outputs/flutter-apk/*.apk

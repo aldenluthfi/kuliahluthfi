@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<link rel="stylesheet" href="{% static 'css/create.css' %}">
+{% endblock meta %}
+
+{% block content %}
+<div class="create">
+
+    <h1>Create a Salt</h1>
+
+    <div class="form">
+        <form method="POST"">
+            {% csrf_token %}
+            <div class="form-wrapper">
+                <input type="text" name="name" placeholder="Name" class="username clickable"><br>
+                <input type="number" name="amount" placeholder="Amount" class="username clickable"><br>
+                <input type="text" name="description" placeholder="Description" class="username clickable"><br>
+                <input type="submit" hidden />
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

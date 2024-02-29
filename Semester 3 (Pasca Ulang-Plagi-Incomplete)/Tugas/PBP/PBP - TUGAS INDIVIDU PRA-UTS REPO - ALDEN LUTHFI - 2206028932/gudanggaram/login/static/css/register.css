@@ -1,0 +1,111 @@
+h1 {
+  text-align: right;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+  width: 40vw;
+  height: 100vh;
+  margin-right: 40px;
+}
+
+input {
+  background-color: var(--light);
+  border: 0;
+  font-family: 'Cartograph Sans CF';
+  font-weight: Bold;
+  font-size: 14px;
+  font-style: italic;
+  height: 1.5rem;
+}
+
+.login {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  height: 100%;
+  width: 40vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.form-wrapper{
+  display: block;
+  flex-direction: column;
+  width: 20rem;
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.message-wrapper {
+  text-align: left;
+}
+
+.username, .password {
+  width: 20rem;
+  height: 3rem;
+  border-bottom: 0.18rem solid var(--dark);
+}h1 {
+  text-align: right;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+  width: 40vw;
+  height: 100vh;
+  margin-right: 40px;
+}
+
+input {
+  background-color: var(--light);
+  border: 0;
+  font-family: 'Cartograph Sans CF';
+  font-weight: Bold;
+  font-size: 14px;
+  font-style: italic;
+  height: 1.5rem;
+}
+
+.login {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  height: 100%;
+  width: 40vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.form-wrapper{
+  display: block;
+  flex-direction: column;
+  width: 20rem;
+  height: 100%;
+}
+
+.message-wrapper {
+  text-align: left;
+}
+
+.username, .password {
+  width: 20rem;
+  height: 3rem;
+  border-bottom: 0.18rem solid var(--dark);
+}

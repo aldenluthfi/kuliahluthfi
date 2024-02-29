@@ -1,0 +1,7 @@
+django
+gunicorn
+whitenoise
+psycopg2-binary
+requests
+urllib3
+django-environ

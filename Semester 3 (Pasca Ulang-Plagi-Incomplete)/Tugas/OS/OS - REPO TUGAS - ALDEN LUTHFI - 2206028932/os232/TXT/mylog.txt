@@ -1,0 +1,63 @@
+# Log Format
+# ZCZC WEEK# MINUTES LogCode Description
+# LogCode: https://osp4diss.vlsm.org/ETC/logCodes.txt
+ZCZC W00 100 L02 Attended class on Tuesday
+ZCZC W00 30 L03 Made Github repo and other stuff
+ZCZC W00 30 L04 Made the Github Page
+ZCZC W00 100 L02 Attended class on Thursday
+ZCZC W00 120 L05 Studying for Quiz
+ZCZC W00 120 L09 Reading Assignment
+ZCZC W00 60 L21 Installed archlinux to familiarize with linux
+ZCZC W01 100 L02 Attended class on Tuesday
+ZCZC W01 100 L02 Attended class on Thursday
+ZCZC W01 120 L05 Studying for Quiz
+ZCZC W01 240 L09 Tinkering with debian and stuff (this was done over the course of two days)
+ZCZC W01 60 L22 Customized my terminal
+ZCZC W02 100 L02 Attended class on Tuesday
+ZCZC W02 100 L02 Attended class on Thursday
+ZCZC W02 120 L05 Studying for Quiz
+ZCZC W02 240 L09 Assignment stuff
+ZCZC W02 60 L22 Customized my terminal
+ZCZC W02 60 L24 Made the pop quiz
+ZCZC W03 100 L02 Attended class on Tuesday
+ZCZC W03 100 L02 Attended class on Thursday
+ZCZC W03 120 L05 Studying for Quiz
+ZCZC W03 240 L09 Assignment stuff
+ZCZC W03 30 L22 Customized my terminal
+ZCZC W03 60 L24 Made the pop quiz
+ZCZC W03 10 L09 Assignment final changes
+ZCZC W04 100 L02 Attended class on Tuesday
+ZCZC W04 100 L02 Attended class on Thursday
+ZCZC W04 120 L00 Studying in general
+ZCZC W04 240 L09 Assignment stuff
+ZCZC W04 30 L22 Customized linux desktop
+ZCZC W04 60 L24 Made the pop quiz
+ZCZC W04 120 L09 Assignment and doing some coding in C
+ZCZC W05 100 L02 Attended class on Tuesday
+ZCZC W05 100 L02 Attended class on Thursday
+ZCZC W05 120 L00 Studying in general
+ZCZC W05 240 L09 Assignment stuff
+ZCZC W05 30 L01 rechecked scele
+ZCZC W05 60 L24 Made the pop quiz
+ZCZC W05 120 L09 Assignment finishing
+ZCZC W06 100 L02 Attended class on Tuesday
+ZCZC W06 100 L02 Attended class on Thursday
+ZCZC W06 120 L00 Studying in general
+ZCZC W06 240 L09 Assignment stuff
+ZCZC W06 30 L01 rechecked scele
+ZCZC W06 60 L24 Made the pop quiz
+ZCZC W06 120 L09 Assignment finishing
+ZCZC W07 100 L02 Attended class on Tuesday
+ZCZC W07 100 L02 Attended class on Thursday
+ZCZC W07 120 L00 Studying in general
+ZCZC W07 240 L09 Assignment stuff
+ZCZC W07 30 L01 rechecked scele
+ZCZC W07 60 L24 Made the pop quiz
+ZCZC W07 120 L09 Assignment finishing
+ZCZC W08 100 L02 Attended class on Tuesday
+ZCZC W08 100 L02 Attended class on Thursday
+ZCZC W08 120 L00 Studying in general
+ZCZC W08 240 L09 Assignment stuff
+ZCZC W08 30 L01 rechecked scele
+ZCZC W08 60 L24 Made the pop quiz
+ZCZC W08 120 L09 Assignment finishing

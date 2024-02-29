@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock meta %}
+
+{% block content %}
+<div id="home">
+    <div id="logo">
+        <img src="{% static 'images/vector/Logo.svg' %}"/><br>
+    </div>
+
+    <div class="ornament">
+        <img src="{% static 'images/vector/Ornaments1.svg' %}"/>
+    </div>
+
+    <div class="container">
+        <div class="scroll">
+            <img class="title" src="{% static 'images/vector/Title.svg' %}"/>
+            <img class="title" src="{% static 'images/vector/Title.svg' %}"/>
+        </div>
+    </div>
+
+    <p>Things here don't make sense, it's not supposed to...</p><br>
+</div>
+<div class="data">
+    <h1 id="salt_count"></h1>
+    <div class="table-wrapper">
+        <table id="datatable"></table>
+    </div>
+    <div>
+        <a href="{% url 'main:create' %}">
+            <button id="button_add" class="clickable button">
+                Add Salt
+            </button>
+        </a>
+    </div>
+</div>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock content %}

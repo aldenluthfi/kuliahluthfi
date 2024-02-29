@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gudang Garam</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% block meta %}
+        {% endblock meta %}
+    </head>
+
+    <body>
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+        <div class="unselectable">
+            {% block content %}
+            {% endblock content %}
+        </div>
+        <script src="{% static 'js/base.js' %}"></script>
+    </body>
+</html>

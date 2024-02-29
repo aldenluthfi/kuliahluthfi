@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock meta %}
+
+{% block content %}
+<div class="login">
+
+    <h1>Hello Again!</h1>
+
+    <div class="form">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-wrapper">
+                <input type="text" name="username" placeholder="Username" class="form-control username clickable"><br>
+                <input type="password" name="password" placeholder="Password" class="form-control password clickable"><br>
+                <input type="submit" hidden />
+            </div>
+            <div class="message-wrapper">
+               {% if messages %}
+                    <br>
+                    {% for message in messages %}
+                        <a>{{ message }}</a>
+                    {% endfor %}
+                {% endif %}
+                <br>
+                No account? <a href="{% url 'login:register' %}" class="clickable">Register Now</a>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

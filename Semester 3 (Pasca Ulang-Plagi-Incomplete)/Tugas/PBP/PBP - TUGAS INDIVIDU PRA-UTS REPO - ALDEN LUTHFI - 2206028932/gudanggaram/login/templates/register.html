@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock meta %}
+
+{% block content %}
+
+<div class = "login">
+
+    <h1>Hello World!</h1>
+
+    <div class="form">
+        <form method="POST" >
+            {% csrf_token %}
+            <div class="form-wrapper">
+                <input type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus required id="id_username" placeholder="Username" class="form-control username clickable"><br>
+                <input type="password" name="password1" autocomplete="new-password" required id="id_password1" placeholder="Password" class="form-control password clickable"><br>
+                <input type="password" name="password2" autocomplete="new-password" required id="id_password2" placeholder="Re-enter Password" class="form-control password clickable"><br>
+                <input type="submit" hidden />
+            </div>
+        </form>
+        <div class="message-wrapper">
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                        {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
