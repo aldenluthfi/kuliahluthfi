@@ -1,5 +1,5 @@
 # KuliahLuthfi
-Archive of an Universitas Indonesia Computer Science Major
+Archive of an Universitas Indonesia computer science major
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
