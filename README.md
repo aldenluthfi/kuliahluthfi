@@ -1,4 +1,4 @@
-# KuliahLuthfi
+# 🎓 KuliahLuthfi
 Archive of an Universitas Indonesia computer science major
 
 ```
