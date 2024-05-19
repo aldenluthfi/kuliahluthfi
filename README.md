@@ -2,7 +2,6 @@
 Archive of an Universitas Indonesia computer science major
 
 <sub>
-<sup>
 <pre>
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ Term │ Code       │ Course (ID)                            │ Course (EN)                                 │ Credits │
@@ -34,6 +33,5 @@ Archive of an Universitas Indonesia computer science major
 │      │ STATPROB   │ Statistika dan Probabilitas            │ Statistics and Probability                  │ 3       │
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 </pre>
-</sup>
 </sub>
 
