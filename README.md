@@ -2,7 +2,7 @@
 Archive of an Universitas Indonesia computer science major
 
 <sub>
-<pre>
+<tt>
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ Term │ Code       │ Course (ID)                            │ Course (EN)                                 │ Credits │
 │ ─────┼────────────┼────────────────────────────────────────┼─────────────────────────────────────────────┼──────── │
@@ -32,6 +32,6 @@ Archive of an Universitas Indonesia computer science major
 │      │ SISTER     │ Sistem Interaksi                       │ System Interaction                          │ 3       │
 │      │ STATPROB   │ Statistika dan Probabilitas            │ Statistics and Probability                  │ 3       │
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-</pre>
+</tt>
 </sub>
 
