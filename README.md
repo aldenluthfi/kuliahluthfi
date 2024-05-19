@@ -3,9 +3,9 @@
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/d4e75bfc-a53f-43ce-b483-04ff40f6062d">
   <img>
 </picture>
-
-<br><pre>
+<br>
 <sup>
+<pre>
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ Term  │ Code            │ Course (ID)                                 │ Course (EN)                                 │ Credits │
 │ ──────┼─────────────────┼─────────────────────────────────────────────┼─────────────────────────────────────────────┼──────── │
@@ -35,8 +35,8 @@
 │       │ SISTER          │ Sistem Interaksi                            │ System Interaction                          │ 3       │
 │       │ STATPROB        │ Statistika dan Probabilitas                 │ Statistics and Probability                  │ 3       │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-</sup>
 </pre>
+</sup>
 
 
 
