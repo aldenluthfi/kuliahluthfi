@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/16cb9363-8638-49b5-807f-6650819190df">
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/9dcb9f43-4a65-4f68-8452-8416593599ad">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/b6c0fa29-c90b-4110-9ac7-74e96d95ce93">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/e24deffc-f4ee-4d44-addf-50390c203b11">
   <img>
 </picture>
 
