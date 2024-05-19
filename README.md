@@ -12,17 +12,17 @@
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ Term  │ Code            │ Course (ID)                                 │ Course (EN)                                 │ Credits │
 │ ──────┼─────────────────┼─────────────────────────────────────────────┼─────────────────────────────────────────────┼──────── │
-│ 1     │ DDP 1           │ Dasar─Dasar Pemrograman 1                   │ Programming Foundations 1                   │ 4       │
-│       │ KALKULUS 1      │ Kalkulus 1                                  │ Calculus 1                                  │ 3       │
-│       │ MATDIS 1        │ Matematika Diskrit 1                        │ Disrete Mathematics 1                       │ 3       │
+│ 1     │ DDP1            │ Dasar─Dasar Pemrograman 1                   │ Programming Foundations 1                   │ 4       │
+│       │ KALKULUS1       │ Kalkulus 1                                  │ Calculus 1                                  │ 3       │
+│       │ MATDIS1         │ Matematika Diskrit 1                        │ Disrete Mathematics 1                       │ 3       │
 │       │ PSD             │ Pengantar Sistem Digital                    │ Introduction to Digital Systems             │ 3       │
 │       │ AGAMA           │ Agama Islam                                 │ -                                           │ 2       │
 │       │ BING            │ Bahasa Inggris                              │ -                                           │ 2       │
 │ ──────┼─────────────────┼─────────────────────────────────────────────┼─────────────────────────────────────────────┼──────── │
 │ 2     │ MPKT            │ Pengembangan Kepribadian Terintegrasi       │ -                                           │ 5       │
-│       │ DDP 2           │ Dasar─Dasar Pemrograman 2                   │ Programming Foundations 2                   │ 4       │
-│       │ KALKULUS 2      │ Kalkulus 2                                  │ Calculus 2                                  │ 3       │
-│       │ MATDIS 2        │ Matematika Diskrit 2                        │ Disrete Mathematics 2                       │ 3       │
+│       │ DDP2            │ Dasar─Dasar Pemrograman 2                   │ Programming Foundations 2                   │ 4       │
+│       │ KALKULUS2       │ Kalkulus 2                                  │ Calculus 2                                  │ 3       │
+│       │ MATDIS2         │ Matematika Diskrit 2                        │ Disrete Mathematics 2                       │ 3       │
 │       │ POK             │ Pengantar Organisasi Komputer               │ Introduction to Computer Organization       │ 3       │
 │ ──────┼─────────────────┼─────────────────────────────────────────────┼─────────────────────────────────────────────┼──────── │
 │ 3     │ OS              │ Sistem Operasi                              │ Operating Systems                           │ 4       │
@@ -37,6 +37,13 @@
 │       │ TBA             │ Teori Bahasa dan Automata                   │ Language Theory and Automata                │ 4       │
 │       │ SISTER          │ Sistem Interaksi                            │ System Interaction                          │ 3       │
 │       │ STATPROB        │ Statistika dan Probabilitas                 │ Statistics and Probability                  │ 3       │
+│ ──────┼─────────────────┼─────────────────────────────────────────────┼─────────────────────────────────────────────┼──────── │
+│ 5     │ CRYPT           │ Kriptografi                                 │ Statistics and Probability                  │ 4       │
+│       │ ETHACK          │ Peretasan Etis                              │ System Interaction                          │ 4       │
+│       │ JARKOM          │ Jaringan Komputer                           │ Databases                                   │ 4       │
+│       │ KASDAD          │ Kecerdasan Artifisial dan SAins Data Dasar  │ Algorithms Design and Analysis              │ 4       │
+│       │ ANUM            │ Analisis Numerik                            │ Advanced Programming                        │ 3       │
+│       │ RPL             │ Rancangan Perangkat Lunak                   │ Language Theory and Automata                │ 3       │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 </pre>
 
