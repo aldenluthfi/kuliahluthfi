@@ -1,4 +1,5 @@
-![kuliahluthfi](https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/95665b5b-6759-4950-b511-fa70a5a78ad8#gh-dark-mode-only)
+![kuliahluthfi](https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/95665b5b-6759-4950-b511-fa70a5a78ad8#gh-dark-mode-only)![kuliahluthfi light](https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/d4e75bfc-a53f-43ce-b483-04ff40f6062d#gh-light-mode-only)
+
 
 <sup>
 <pre>
