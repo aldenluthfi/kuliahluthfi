@@ -29,7 +29,7 @@
 │       │ PBP             │ Pemrograman Berbasis Platform               │ Platform─based Development                  │ 4       │
 │       │ SDA             │ Struktur Data dan Algoritma                 │ Data Structures and Algorithms              │ 4       │
 │       │ ALIN            │ Aljabar Linier                              │ Linear Algebra                              │ 3       │
-│       │ MPPI            │ Metode Penelitian dan Penulisan Ilmiah      │ Scientific Writing and Research Methodology │ 3       │
+│       │ MPPI            │ Metode Penelitian dan Penulisan Ilmiah      │ Research Methodology and Scientific Writing │ 3       │
 │ ──────┼─────────────────┼─────────────────────────────────────────────┼─────────────────────────────────────────────┼──────── │
 │ 4     │ ADPRO           │ Pemrograman Lanjut                          │ Advanced Programming                        │ 4       │
 │       │ BASDAT          │ Basis Data                                  │ Databases                                   │ 4       │
