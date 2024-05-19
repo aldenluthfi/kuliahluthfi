@@ -1,4 +1,3 @@
-# 🎓 KuliahLuthfi
 ![kuliahluthfi](https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/95665b5b-6759-4950-b511-fa70a5a78ad8#gh-dark-mode-only)
 
 <sup>
