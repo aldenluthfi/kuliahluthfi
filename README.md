@@ -38,12 +38,12 @@
 │       │ SISTER          │ Sistem Interaksi                            │ System Interaction                          │ 3       │
 │       │ STATPROB        │ Statistika dan Probabilitas                 │ Statistics and Probability                  │ 3       │
 │ ──────┼─────────────────┼─────────────────────────────────────────────┼─────────────────────────────────────────────┼──────── │
-│ 5     │ CRYPT           │ Kriptografi                                 │ Statistics and Probability                  │ 4       │
-│       │ ETHACK          │ Peretasan Etis                              │ System Interaction                          │ 4       │
-│       │ JARKOM          │ Jaringan Komputer                           │ Databases                                   │ 4       │
-│       │ KASDAD          │ Kecerdasan Artifisial dan SAins Data Dasar  │ Algorithms Design and Analysis              │ 4       │
-│       │ ANUM            │ Analisis Numerik                            │ Advanced Programming                        │ 3       │
-│       │ RPL             │ Rancangan Perangkat Lunak                   │ Language Theory and Automata                │ 3       │
+│ 5     │ CRYPT           │ Kriptografi                                 │ Cryptography                                │ 4       │
+│       │ ETHACK          │ Peretasan Etis                              │ Ethical Hacking                             │ 4       │
+│       │ JARKOM          │ Jaringan Komputer                           │ Computer Network                            │ 4       │
+│       │ KASDAD          │ Kecerdasan Artifisial dan Sains Data Dasar  │ AIand Basic Data Science                    │ 4       │
+│       │ ANUM            │ Analisis Numerik                            │ Numerical Analysis                          │ 3       │
+│       │ RPL             │ Rancangan Perangkat Lunak                   │ Software Design                             │ 3       │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 </pre>
 
