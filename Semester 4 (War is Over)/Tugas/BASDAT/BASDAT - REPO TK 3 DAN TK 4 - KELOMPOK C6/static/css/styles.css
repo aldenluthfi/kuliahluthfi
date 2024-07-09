@@ -1,0 +1,25 @@
+.h-screen {
+    height: calc(100vh - 50px);
+}
+
+.w-form {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .h-screen {
+        height: calc(100vh - 100px);
+    }
+}
+
+@media (min-width: 1080px) {
+    .w-form {
+        width: 30%;
+    }
+}

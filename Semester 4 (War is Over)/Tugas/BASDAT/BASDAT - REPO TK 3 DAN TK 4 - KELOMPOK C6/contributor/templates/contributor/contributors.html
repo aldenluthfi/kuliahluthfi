@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block content %}
+<div class="my-5 d-flex flex-column">
+  <h1 class="text-center mb-5">Daftar Kontributor</h1>
+  <div class="align-self-center w-75">
+    <div class="d-flex flex-row w-75 gap-2 my-3">
+      <select class="form-select w-25">
+        <option value="All" selected hidden>Peran</option>
+        <option value="All">Semua</option>
+        <option value="Sutradara">Sutradara</option>
+        <option value="Pemain">Pemain</option>
+        <option value="Penulis Skenario">Penulis Skenario</option>
+      </select>
+      <button class="btn btn-primary submit-button" onclick="updateTable()">Filter!</button>
+    </div>
+    <table class="table border">
+      <tr>
+        <th>ID</th>
+        <th>Nama</th>
+        <th>Jenis Kelamin</th>
+        <th>Kewarganegaraan</th>
+        <th>Peran</th>
+      </tr>
+      {% for contrib in contributors %}
+      <tr class="table-contents">
+          <td>{{ contrib.id }}</td>
+          <td>{{ contrib.nama }}</td>
+          <td>{{ contrib.jenis_kelamin }}</td>
+          <td>{{ contrib.kewarganegaraan }}</td>
+          <td>{{ contrib.peran }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+<script>
+  function updateTable() {
+    var peran = document.querySelector("select").value;
+    var tableContents = document.querySelectorAll(".table-contents");
+    tableContents.forEach((content) => {
+      if (peran == "All" || content.children[4].innerText == peran) {
+        content.style.display = "table-row";
+      } else {
+        content.style.display = "none";
+      }
+    });
+  }
+</script>
+{% endblock content %}

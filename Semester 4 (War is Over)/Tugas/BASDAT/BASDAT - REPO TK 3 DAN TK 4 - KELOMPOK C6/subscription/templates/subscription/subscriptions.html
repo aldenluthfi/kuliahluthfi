@@ -1,0 +1,94 @@
+{% extends 'base.html' %} {% block content %}
+{% if messages %}
+{% for message in messages %}
+<div
+  class="alert alert-{% if message.tags %}{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}{% endif %} text-center">
+  <p>{{ message }}</p>
+</div>
+{% endfor %}
+{% endif %}
+<div class="my-5 d-flex flex-column">
+  <h1 class="text-center mb-5">Riwayat Langganan</h1>
+  <div class="align-self-center w-75">
+    <table class="table border">
+      <tr>
+        <th>Nama</th>
+        <th>Harga</th>
+        <th>Resolusi Layar</th>
+        <th>Dukungan Perangkat</th>
+        <th>Tanggal Dimulai</th>
+        <th>Tanggal Berakhir</th>
+      </tr>
+      {% for sub in user_subscription %}
+      <tr class="table-contents">
+        <td>{{ sub.name }}</td>
+        <td>{{ sub.price }}</td>
+        <td>{{ sub.screen_resolution }}</td>
+        <td>{{ sub.device_support }}</td>
+        <td>{{ sub.start_date }}</td>
+        <td>{{ sub.end_date }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <h1 class="text-center my-5">Pilihan Paket</h1>
+  <div class="align-self-center w-75">
+    <table class="table border">
+      <tr>
+        <th>Nama</th>
+        <th>Harga</th>
+        <th>Resolusi Layar</th>
+        <th>Dukungan Perangkat</th>
+        <th></th>
+      </tr>
+      {% for package in pricing %}
+      <tr class="table-contents">
+        <td>{{ package.name }}</td>
+        <td>{{ package.price }}</td>
+        <td>{{ package.screen_resolution }}</td>
+        <td>{{ package.device_support }}</td>
+        <td>
+          <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="package" value="{{ package.name }}">
+            <button type="submit" class="btn btn-primary">Beli</button>
+          </form>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <h1 class="text-center my-5">Riwayat Transaksi</h1>
+  <div class="align-self-center w-75">
+    <table class="table border">
+      <tr>
+        <th>Nama</th>
+        <th>Tanggal Dimulai</th>
+        <th>Tanggal Berakhir</th>
+        <th>Metode Pembayaran</th>
+        <th>Tanggal Pembayaran</th>
+        <th>Total Pembayaran</th>
+      </tr>
+      {% for trans in transactions %}
+      <tr class="table-contents">
+        <td>{{ trans.name }}</td>
+        <td>{{ trans.start }}</td>
+        <td>{{ trans.end }}</td>
+        <td>{{ trans.method }}</td>
+        <td>{{ trans.timestamp }}</td>
+        <td>{{ trans.total }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+<script>
+    // Get all info messages
+    var info_messages = document.getElementsByClassName('alert');
+
+    setTimeout(function(){
+        for (var i = 0; i < info_messages.length; i ++) {
+            info_messages[i].setAttribute('style', 'display:none !important');
+        }
+    }, 500);
+</script>
+{% endblock content %}

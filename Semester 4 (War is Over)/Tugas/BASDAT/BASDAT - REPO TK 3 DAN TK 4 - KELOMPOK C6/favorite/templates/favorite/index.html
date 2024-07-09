@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Modal -->
+<div class="modal fade" id="favorites-modal" tabindex="-1" aria-labelledby="favorites-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="favorites-modal-label">Tambah ke Daftar Favorit</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="{% url 'favorite:add_to_favorite' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="favorites-dropdown" class="form-label">Judul Daftar Favorit:</label>
+                        <select id="favorites-dropdown" name="show_id" class="form-select">
+                            {% for show in available_shows %}
+                                <option value="{{ show.id }}">{{ show.judul }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Tambah</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main content -->
+<div class="container my-5">
+    <h1 class="text-center mb-5">Daftar Favorit</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="mb-3 text-end">
+                <button class="btn btn-success favorites-button" data-bs-toggle="modal" data-bs-target="#favorites-modal">Favorit Tayangan</button>
+            </div>
+            <div class="table-responsive">
+                <table class="table text-center align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Judul</th>
+                            <th scope="col">Waktu Ditambahkan</th>
+                            <th scope="col">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for favorite in favorites %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'favorite:favorite_details' favorite.show_id %}" style="color: #2a4d69;">{{ favorite.judul }}</a>
+                            </td>                        
+                            <td>{{ favorite.timestamp }}</td>
+                            <td>
+                                <form method="POST" action="{% url 'favorite:delete_favorite' %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="show_id" value="{{ favorite.show_id }}">
+                                    <input type="hidden" name="timestamp" value="{{ favorite.timestamp }}">
+                                    <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                                </form>                                                             
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

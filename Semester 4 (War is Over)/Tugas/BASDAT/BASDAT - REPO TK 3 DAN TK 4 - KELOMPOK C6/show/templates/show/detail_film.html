@@ -1,0 +1,287 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+    body {
+        background-color: #333740; /* Dark grey background for better contrast */
+        color: #f9f9f9; /* Light text for readability */
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        width: 15px;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        cursor: ew-resize;
+        background: #4A5568; /* Dark slider thumb */
+        box-shadow: -405px 0 0 400px #718096; /* Lighter grey for the slider */
+        border-radius: 50%;
+    }
+    .button-group {
+        display: flex;
+        justify-content: center; /* Centers buttons horizontally */
+        gap: 10px; /* Adds space between buttons */
+    }
+    a {
+        color: #63b3ed; /* Soft blue links */
+        text-decoration: none; /* Removes underline */
+        padding: 12px 24px; /* Padding for better touch area */
+        border: 1px solid transparent; /* Adds border for consistency */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    }
+    a:hover {
+        color: #2b6cb0; /* Darker blue on hover */
+        background-color: #ffffff; /* White background on hover */
+        border-color: #2b6cb0; /* Dark blue border on hover */
+    }
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #718096;
+        background-color: #242831;
+        color: #f9f9f9;
+    }
+    .form-group input[type="submit"] {
+        background-color: #4A5568;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .form-group input[type="submit"]:hover {
+        background-color: #2b6cb0;
+    }
+</style>
+<div class="mx-auto min-h-screen bg-[#242831] font-inter_tight pb-6">
+    <div class="container mx-auto px-4 py-4" style="cursor: auto;">
+        <div class="mb-12 text-center">
+            <h1 class="pt-16 pb-4 font-bold text-5xl drop-shadow-md"><span class="bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">Film Details</span></h1>
+        </div>
+        <div class="flex flex-col">
+            <div class="mb-4">
+                <table class="table-auto w-full">
+                    <tr>
+                        <td class="text-left">
+                            <div class="mt-10 mb-2">
+                                <p class="text-xl">Title: {{ tayangan.0.1 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mt-5">
+                                <input id="input-range" class="w-full rounded-lg overflow-hidden appearance-none bg-gray-400 h-4" type="range" min="1" max="{{ film.0 }}" step="1" value="50" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="button-group">
+                                <a id="watch-now-button" href="#" class="block rounded-md font-bold duration-200 hover:bg-blue-500 hover:text-white">
+                                    Watch Now
+                                </a>
+                                <a href="{% url 'show:add_to' %}?judul={{ tayangan.0.1 }}&id={{ tayangan.0.0 }}&addto=download" class="block rounded-md font-bold duration-200 hover:bg-green-500 hover:text-white">
+                                    Download Show
+                                </a>
+                                <a id="save-to-favorites-button" href="#" class="block rounded-md font-bold duration-200 hover:bg-red-500 hover:text-white" data-bs-toggle="modal" data-bs-target="#saveToFavoritesModal">
+                                    Save to Favourites
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="mb-4">
+                <table class="table-auto w-full">
+                    <tr>
+                        <td class="text-left">
+                            <div class="mt-10 mb-2">
+                                <p class="text-xl">Total View: {{ tayangan.0.4 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2">
+                                <p class="text-xl">Average Rating: {{ tayangan.0.6 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2">
+                                <p class="text-xl">Synopsis: {{ tayangan.0.2 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2 text-slate-100">
+                                <p class="text-xl">Film Duration: {{ film.0 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2 text-slate-100">
+                                <p class="text-xl">Release Date: {{ film.1 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2 text-slate-100">
+                                <p class="text-xl">Film URL: {{ film.2 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2">
+                                <p class="text-xl">Genre: {{ tayangan.0.5 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2">
+                                <p class="text-xl">Country of Origin: {{ tayangan.0.3 }}</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left pt-8">
+                            <div class="mb-2">
+                                <p class="text-xl">Actors:</p>
+                            </div>
+                            {% for actor in pemain %}
+                            <span style="margin-left: 20px;">- {{ actor.0 }}</span><br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2">
+                                <p class="text-xl">Screenwriters:</p>
+                            </div>
+                            {% for writer in penulis %}
+                            <span style="margin-left: 20px;">- {{ writer.0 }}</span><br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <div class="mb-2">
+                                <p class="text-xl">Director:</p>
+                            </div>
+                            {% for director in sutradara %}
+                            <span style="margin-left: 20px;">- {{ director.0 }}</span><br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="flex flex-col">
+            <div class="mb-4">
+                <h2 class="text-3xl font-bold mb-4">Leave a Review</h2>
+                <form action="{% url 'show:save_review' %}?id_tayangan={{ tayangan.0.0 }}" method="POST" class="w-full max-w-lg">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="review">Your Review:</label>
+                        <textarea id="review" name="review" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="1">1 - Very Bad</option>
+                            <option value="2">2 - Bad</option>
+                            <option value="3">3 - Average</option>
+                            <option value="4">4 - Good</option>
+                            <option value="5">5 - Excellent</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit Review">
+                    </div>
+                </form>
+                {% if ulasan %}
+                <h2 class="text-bold">Daftar ulasan:</h2>
+                <ul>
+                {% for ulas in ulasan %}
+                <li>{{ulas.1}} - {{ulas.4}} ({{ulas.3}}/5)</li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="saveToFavoritesModal" tabindex="-1" aria-labelledby="saveToFavoritesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="saveToFavoritesModalLabel">Tambah ke Daftar Favorit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="addToFavoritesForm" action="{% url 'show:add_to' %}?judul={{ tayangan.0.1 }}&id={{ tayangan.0.0 }}&addto=favorit" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="id_tayangan" value="{{ tayangan.0.0 }}">
+            <div class="mb-3 text-black">
+              <label for="favoritesDropdown" class="form-label">Pilih Daftar Favorit</label>
+              <select class="form-select" id="favoritesDropdown" name="favorite_list" required>
+                {% for favorite in daftar_favorit %}
+                <option class="text-black" value="{{ favorite.2 }}">{{ favorite.2 }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Tambah</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const rangeInput = document.getElementById("input-range");
+        const totalDuration = parseInt(rangeInput.max, 10);
+        const threshold = totalDuration * 0.7;
+        const watchNowButton = document.getElementById("watch-now-button");
+        const id = "{{ tayangan.0.0 }}";
+
+        watchNowButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            const currentValue = parseInt(rangeInput.value, 10);
+            console.log(currentValue)
+
+            if (currentValue >= threshold) {
+                window.location.href = '/show/add-tontonan/' + id + '?durasi=' + currentValue;
+            } else {
+                alert("You need to adjust the slider to at least 70% to watch now.");
+            }
+        });
+    });
+</script>
+{% endblock content %}

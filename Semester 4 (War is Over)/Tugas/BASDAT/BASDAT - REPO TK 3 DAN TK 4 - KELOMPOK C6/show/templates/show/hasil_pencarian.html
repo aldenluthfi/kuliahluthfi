@@ -1,0 +1,39 @@
+{% extends 'base.html' %} 
+{% block content %}
+<h1>Daftar Tayangan PacilFlix</h1>
+<div class="col-md-12 text-center">
+    <form method='GET' action="{% url 'show:search' %}" class="d-flex flex-row">
+        <input type="text" name="query" id="searchInput" class="form-control my-3" placeholder="Cari Film, Series..." oninput="searchShows()">
+        <button type="submit" class="px-4 py-2 border border-gray-300 bg-gray-200 text-gray-700 rounded-r-md hover:bg-gray-300 focus:outline-none">Search</button>
+    </form>
+</div>
+<div>
+    {% if tayangan %}
+    <table class="table table-hover mt-3">
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Sinopsis</th>
+                <th>Trailer</th>
+                <th>Tanggal Rilis</th>
+                <th>Detail Tayangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for tayang in tayangan %}
+            <tr>
+                <td>{{ tayang.1 }}</td>
+                <td>{{ tayang.2 }}</td>
+                <td><a href="{{ tayang.3 }}" target="_blank">Watch Trailer</a></td>
+                <td>{{ tayang.6 }}</td>
+                <td><a href={% url 'show:detail' id_tayangan=tayang.0 %}> Click here!</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p class="text-center font-bold">Maaf tayangan yang Anda cari tidak ditemukan</p>
+    {% endif %}
+
+</div>
+{% endblock content %}

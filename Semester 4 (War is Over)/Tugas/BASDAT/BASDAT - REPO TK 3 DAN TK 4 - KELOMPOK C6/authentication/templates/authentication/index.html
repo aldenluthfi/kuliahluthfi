@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container d-flex flex-column justify-content-center align-items-center h-screen">
+	<h1 class="text-center">Pacilflix - C6</h1>
+	<div class="row mt-4">
+		<div class="d-flex flex-column gap-2">
+			<a href="{% url 'authentication:login' %}" class="btn btn-primary mb-2">Login</a>
+			<a href="{% url 'authentication:register' %}" class="btn btn-secondary">Register</a>
+		</div>
+	</div>
+</div>
+{% endblock content %}

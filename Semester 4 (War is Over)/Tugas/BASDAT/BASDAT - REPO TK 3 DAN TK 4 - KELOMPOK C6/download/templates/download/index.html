@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Success Modal -->
+<div class="modal fade" id="download-modal" tabindex="-1" aria-labelledby="download-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="download-modal-label">Sukses Menambahkan Tayangan</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Selamat! Anda telah berhasil mengunduh <span id="film-title"></span> dan akan berlaku hingga <span id="expiration-date"></span>.</p>
+                <p>Cek informasi selengkapnya pada halaman daftar unduhan.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="{% url 'download:index' %}" class="btn btn-primary" id="redirect-downloads">Menuju Daftar Unduhan</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Error Modal -->
+<div class="modal fade" id="error-modal" tabindex="-1" aria-labelledby="error-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="error-modal-label">Gagal Menghapus Tayangan </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="error-modal-body">
+                Tayangan minimal harus berada di daftar unduhan selama 1 hari agar bisa dihapus.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main content -->
+<div class="container my-5">
+    <h1 class="text-center mb-5">Daftar Unduhan</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="mb-3 text-center">
+                <form id="download-form" action="{% url 'download:add_download' %}" method="POST" class="d-flex justify-content-center align-items-center">
+                    {% csrf_token %}
+                    <label for="show-selection" class="form-label me-2">Pilih Tayangan:</label>
+                    <select id="show-selection" name="show_id" class="form-select me-2">
+                        {% for show in available_shows %}
+                            <option value="{{ show.id }}">{{ show.judul }}</option>
+                        {% endfor %}
+                    </select>
+                    <button type="button" class="btn btn-success" id="download-button">Unduh</button>
+                </form>
+            </div>
+            <div class="table-responsive">
+                <table class="table text-center align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Judul</th>
+                            <th scope="col">Waktu Diunduh</th>
+                            <th scope="col">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="downloads-list">
+                        {% for show in shows %}
+                        <tr id="row-{{ show.id_tayangan }}">
+                            <td>{{ show.judul }}</td>
+                            <td>{{ show.timestamp|date:"F j, Y, g:i a" }}</td>
+                            <td>
+                                <form method="POST" action="{% url 'download:delete_show' %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="show_id" value="{{ show.id_tayangan }}">
+                                    <button type="submit" class="btn btn-danger btn-sm delete-button" data-id="{{ show.id_tayangan }}">Hapus</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>                    
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById('download-button').addEventListener('click', function() {
+    const form = document.getElementById('download-form');
+    const selectedShow = document.getElementById('show-selection');
+    const showTitle = selectedShow.options[selectedShow.selectedIndex].text;
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 7);
+
+    document.getElementById('film-title').textContent = showTitle;
+    document.getElementById('expiration-date').textContent = expirationDate.toLocaleString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true
+    });
+
+    const formData = new FormData(form);
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            const downloadsList = document.getElementById('downloads-list');
+            const newRow = document.createElement('tr');
+            const formattedDate = expirationDate.toLocaleString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true
+            });
+
+            newRow.innerHTML = `
+                <td>${showTitle}</td>
+                <td>${formattedDate}</td>
+                <td>
+                    <form method="POST" action="{% url 'download:delete_show' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="show_id" value="${formData.get('show_id')}">
+                        <button type="submit" class="btn btn-danger btn-sm delete-button">Hapus</button>
+                    </form>
+                </td>
+            `;
+            downloadsList.appendChild(newRow);
+
+            new bootstrap.Modal(document.getElementById('download-modal')).show();
+        }
+    });
+});
+
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('delete-button')) {
+        event.preventDefault();
+        const button = event.target;
+        const form = button.closest('form');
+        const showId = button.getAttribute('data-id');
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                document.getElementById('row-' + showId).remove();
+            } else {
+                document.getElementById('error-modal-body').textContent = data.error;
+                new bootstrap.Modal(document.getElementById('error-modal')).show();
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('error-modal-body').textContent = 'Terjadi kesalahan teknis.';
+            new bootstrap.Modal(document.getElementById('error-modal')).show();
+        });
+    }
+});
+</script>
+
+{% endblock content %}

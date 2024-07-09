@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    {% if messages %}
+        <div class="my-3">
+            {% for message in messages %}
+                <div class="alert alert-danger">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <h1>Daftar Tayangan PacilFlix</h1>
+    <div class="row">
+        <div class="col-md-12 text-center">
+                <form method='GET' action="{% url 'show:search' %}" class="d-flex flex-row">
+                <input type="text" name="query" id="searchInput" class="form-control my-3" placeholder="Cari Film, Series..." oninput="searchShows()">
+                <button type="submit" class="px-4 py-2 border border-gray-300 bg-gray-200 text-gray-700 rounded-r-md hover:bg-gray-300 focus:outline-none">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <h2>10 Tayangan Terbaik Minggu Ini</h2>
+            <div class="btn-group" role="group">
+                <a id="globalBtn"  class="btn btn-secondary" href="/show/tayangan/">Global</a>
+                <a id="localBtn"   class="btn btn-secondary" href="?lokal=true">Lokal</a>
+
+            </div>
+            <table class="table table-hover mt-3">
+                <thead>
+                    <tr>
+                        <th>Peringkat</th>
+                        <th>Judul</th>
+                        <th>Sinopsis</th>
+                        <th>Trailer</th>
+                        <th>Tanggal Rilis</th>
+                        <th>Total View 7 Hari Terakhir</th>
+                        <th>Detail Tayangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for tayangan in top_ten %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ tayangan.1 }}</td>
+                        <td>{{ tayangan.2 }}</td>
+                        <td><a href="{{ tayangan.3 }}" target="_blank">Watch Trailer</a></td>
+                        <td>{{ tayangan.4 }}</td>
+                        <td>{{ tayangan.5 }}</td>
+                        <td><a href={% url 'show:detail' id_tayangan=tayangan.0 %}> Click here!</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <h2>Films</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Synopsis</th>
+                        <th>Trailer</th>
+                        <th>Release Date</th>
+                        <th>Detail Film</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for film in films %}
+<tr>
+    <td>{{ film.1 }}</td>
+    <td>{{ film.2 }}</td>
+    <td><a href="{{ film.3 }}" target="_blank">Watch Trailer</a></td>
+    <td>{{ film.4 }}</td>
+    <td><a href="{% url 'show:detail' id_tayangan=film.0 %}?type=film">Click here!</a></td>
+</tr>
+{% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <h2>Series</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Synopsis</th>
+                        <th>Trailer</th>
+                        <th>Release Date</th>
+                        <th> Detail Series</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for series in series %}
+<tr>
+    <td>{{ series.1 }}</td>
+    <td>{{ series.2 }}</td>
+    <td><a href="{{ series.3 }}" target="_blank">Watch Trailer</a></td>
+    <td>{{ series.4 }}</td>
+    <td><a href="{% url 'show:detail' id_tayangan=series.0 %}?type=series">Click here!</a></td>
+</tr>
+{% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}

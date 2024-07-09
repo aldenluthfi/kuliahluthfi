@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid mx-4">
+		{% if username == 'Guest' %}
+		<a class="navbar-brand" href="{% url 'authentication:index' %}">Pacilflix</a>
+		{% else %}
+		<a class="navbar-brand" href="{% url 'show:tayangan' %}">Pacilflix</a>
+		{% endif %}
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto">
+				{% if username == 'Guest' %}
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'show:trailer' %}">Shows</a>
+				</li>
+				{% else %}
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'show:tayangan' %}">Shows</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'contributor:contributor' %}">Contributors</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'download:index' %}">Downloads</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'favorite:index' %}">Favorites</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'subscription:subscription' %}">Subscriptions</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						{{ username }}
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="{% url 'authentication:logout' %}">Logout</a></li>
+					</ul>
+				</li>
+				{% endif %}
+			</ul>
+		</div>
+	</div>
+</nav>

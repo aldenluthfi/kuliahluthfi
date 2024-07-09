@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #242831;
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+    }
+
+    h1 span {
+      background: linear-gradient(to right, #007bff, #ff0000);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .rounded-lg {
+      border-radius: 0.5rem;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 4px;
+      background: #gray;
+      outline: none;
+      opacity: 0.7;
+      transition: opacity .15s ease-in-out;
+    }
+
+    input[type="range"]:hover {
+      opacity: 1;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      width: 15px;
+      height: 15px;
+      background: #FFF;
+      cursor: ew-resize;
+      border-radius: 50%;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 15px;
+      background: #FFF;
+      cursor: ew-resize;
+      border-radius: 50%;
+    }
+
+    .btn-custom {
+      display: block;
+      width: 100%;
+      border: 2px solid #FFF;
+      color: #000;
+      background-color: transparent;
+      font-weight: bold;
+      padding: 0.75rem 0;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #FFF;
+      color: #242831;
+    }
+
+    table, td, th {
+      border: 1px solid #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #343a40;
+    }
+
+    td {
+      background-color: #495057;
+    }
+
+    .episode-link {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #FFF;
+      border-radius: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .episode-link:hover {
+      background-color: #FFF;
+      color: #242831;
+    }
+
+    .episode-link.current {
+      background-color: #FFF;
+      color: #242831;
+    }
+  </style>
+</head>
+<body>
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="font-bold text-5xl"><span>Episode</span> Page</h1>
+  </div>
+  <div class="mb-4">
+    <p class="text-xl">Title: {{ judul }}</p>
+    <p class="text-xl">Episode title: {{ subjudul }}</p>
+  </div>
+  <div class="mb-4">
+    <input id="input-range" class="w-full rounded-lg" type="range" min="1" max="{{ episode_khusus.0.3 }}" step="1" value="50" />
+    <a id="watch-now-button" href="#" class="btn-custom mt-3">Tonton</a>
+  </div>
+  <div>
+    <p class="text-xl">Other episodes:</p>
+    <ul class="list-unstyled">
+      {% for eps in episode %}
+      <li class="mb-2">
+        {% if eps.0 == subjudul %}
+        <span class="episode-link current">{{ eps.0 }}</span>
+        {% else %}
+        <a href="{% url 'show:episode' judul=eps.1 sub_judul=eps.0 %}" class="episode-link">{{ eps.0 }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="mt-4">
+    <table class="table table-bordered">
+      <tr>
+        <th>Episode synopsis:</th>
+        <td>{{ episode_khusus.0.2 }}</td>
+      </tr>
+      <tr>
+        <th>Episode duration:</th>
+        <td>{{ episode_khusus.0.3 }} menit</td>
+      </tr>
+      <tr>
+        <th>Episode URL:</th>
+        <td><a href="{{ episode_khusus.0.4 }}">{{ episode_khusus.0.4 }}</a></td>
+      </tr>
+      <tr>
+        <th>Episode release date:</th>
+        <td>{{ episode_khusus.0.5 }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const rangeInput = document.getElementById("input-range");
+    const totalDuration = parseInt(rangeInput.max, 10);
+    const threshold = totalDuration * 0.7;
+    const watchNowButton = document.getElementById("watch-now-button");
+    const id = "{{ episode_khusus.0.6 }}";
+
+    watchNowButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      const currentValue = parseInt(rangeInput.value, 10);
+
+      if (currentValue >= threshold) {
+        window.location.href = '/show/add-tontonan/' + id + '?durasi=' + currentValue;
+      } else {
+        alert("You need to adjust the slider to at least 70% to watch now.");
+      }
+    });
+  });
+</script>
+</body>
+{% endblock content %}

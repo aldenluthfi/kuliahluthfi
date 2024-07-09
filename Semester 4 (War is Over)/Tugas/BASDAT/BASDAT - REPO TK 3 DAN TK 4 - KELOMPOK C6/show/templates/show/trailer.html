@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Daftar Tayangan PacilFlix</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+                <form method='GET' action="{% url 'show:search' %}" class="d-flex flex-row">
+                <input type="text" name="query" id="searchInput" class="form-control my-3" placeholder="Cari Film, Series..." oninput="searchShows()">
+                <button type="submit" class="px-4 py-2 border border-gray-300 bg-gray-200 text-gray-700 rounded-r-md hover:bg-gray-300 focus:outline-none">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <h2>10 Tayangan Terbaik Minggu Ini</h2>
+            <div class="btn-group" role="group">
+                <button id="globalBtn" type="button" class="btn btn-secondary">Global</button>
+                <button id="localBtn" type="button" class="btn btn-secondary">Lokal</button>
+
+            </div>
+            <table class="table table-hover mt-3">
+                <thead>
+                    <tr>
+                        <th>Peringkat</th>
+                        <th>Judul</th>
+                        <th>Sinopsis</th>
+                        <th>Trailer</th>
+                        <th>Tanggal Rilis</th>
+                        <th>Total View 7 Hari Terakhir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for tayangan in top_trailers %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ tayangan.0 }}</td>
+                        <td>{{ tayangan.1 }}</td>
+                        <td><a href="{{ tayangan.2 }}" target="_blank">Watch Trailer</a></td>
+                        <td>{{ tayangan.3 }}</td>
+                        <td>{{ tayangan.4 }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <h2>Films</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Synopsis</th>
+                        <th>Trailer</th>
+                        <th>Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for film in films %}
+                    <tr>
+                        <td>{{ film.0 }}</td>
+                        <td>{{ film.1 }}</td>
+                        <td><a href="{{ film.2 }}" target="_blank">Watch Trailer</a></td>
+                        <td>{{ film.3 }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <h2>Series</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Synopsis</th>
+                        <th>Trailer</th>
+                        <th>Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for series in series %}
+                    <tr>
+                        <td>{{ series.0 }}</td>
+                        <td>{{ series.1 }}</td>
+                        <td><a href="{{ series.2 }}" target="_blank">Watch Trailer</a></td>
+                        <td>{{ series.3 }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

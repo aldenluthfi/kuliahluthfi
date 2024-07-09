@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagian Ulasan</title>
+</head>
+<body>
+    <h2>Bagian Ulasan</h2>
+
+    <!-- Form Ulasan -->
+    <form action="/submit_review" method="post">
+        <label for="deskripsi">Deskripsi Ulasan:</label><br>
+        <input type="text" id="deskripsi" name="deskripsi"><br>
+        
+        <label for="rating">Rating:</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="10"><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Daftar Ulasan -->
+    <h3>Daftar Ulasan:</h3>
+    <ul>
+        <li>User1: Ulasan 1 (Rating: 8)</li>
+        <li>User2: Ulasan 2 (Rating: 7)</li>
+        <li>User3: Ulasan 3 (Rating: 9)</li>
+    </ul>
+</body>
+</html>
+{% endblock content %}
+

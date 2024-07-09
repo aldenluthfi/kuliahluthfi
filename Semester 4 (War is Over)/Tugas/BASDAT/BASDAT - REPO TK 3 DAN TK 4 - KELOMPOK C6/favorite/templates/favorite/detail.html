@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-5">{{ show_title }}</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table text-center align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Judul Tayangan</th>
+                            <th scope="col">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for show in shows %}
+                        <tr>
+                            <td>{{ show.judul }}</td>
+                            <td>
+                                <form method="POST" action="{% url 'favorite:delete_favorite' %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="show_id" value="{{ show_id }}">
+                                    <input type="hidden" name="timestamp" value="{{ show.timestamp }}">
+                                    <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
