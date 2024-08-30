@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package services;
+
+service PaymentService{
+    rpc ProcessPayment(PaymentRequest) returns (PaymentResponse);
+}
+
+service TransactionService{
+    rpc GetTransactionHistory(TransactionRequest) returns (stream TransactionResponse);
+}
+
+service ChatService{
+    rpc Chat(stream ChatMessage) returns (stream ChatMessage);
+}
+
+message PaymentRequest{
+    string user_id = 1;
+    double amount = 2;
+}
+
+message PaymentResponse{
+    bool success = 1;
+}
+
+message TransactionRequest{
+    string user_id = 1;
+}
+
+message TransactionResponse{
+    string transaction_id = 1;
+    string status = 2;
+    double amount =3;
+    string timestamp = 4;
+}
+
+message ChatMessage{
+    string user_id = 1;
+    string message = 2;
+}

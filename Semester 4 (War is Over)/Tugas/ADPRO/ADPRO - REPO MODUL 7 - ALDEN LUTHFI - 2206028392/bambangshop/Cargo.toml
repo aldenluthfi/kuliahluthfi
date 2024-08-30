@@ -1,0 +1,12 @@
+[package]
+name = "bambangshop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = { version = "0.5.0", features = ["json"] }
+dashmap = "5.5.3"
+lazy_static = "1.4.0"
+reqwest = { version = "0.12", features = ["json"] }
+getset = "0.1.2"
+dotenvy = "0.15.7"

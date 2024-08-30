@@ -1,0 +1,23 @@
+[package]
+name = "grpc-tutorial"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "grpc-server"
+path = "src/grpc_server.rs"
+
+[[bin]]
+name = "grpc-client"
+path = "src/grpc_client.rs"
+
+[dependencies]
+tonic = "0.7"
+prost = "0.10"
+tokio = {version ="1", features = ["full"]}
+tokio-stream = "0.1"
+
+[build-dependencies]
+tonic-build="0.7"

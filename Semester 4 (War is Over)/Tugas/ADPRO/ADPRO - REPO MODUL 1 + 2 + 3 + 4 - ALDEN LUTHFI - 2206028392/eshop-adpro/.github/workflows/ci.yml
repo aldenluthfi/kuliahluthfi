@@ -1,0 +1,25 @@
+name: Continous Integration (CI)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out the git repository
+        uses: actions/checkout@v4
+      - name: Set up Java toolchain
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: 'gradle'
+      - name: Set gradlew as executable
+        run: chmod +x ./gradlew
+      - name: Clean gradlew cache
+        run: ./gradlew clean
+      - name: Run unit tests
+        run: ./gradlew test

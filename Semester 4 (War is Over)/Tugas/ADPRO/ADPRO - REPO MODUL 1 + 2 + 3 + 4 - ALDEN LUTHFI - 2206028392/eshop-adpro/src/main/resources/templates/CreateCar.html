@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Car</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERd`knLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <h3>Create New Car</h3>
+
+    <form th:action="@{/car/createCar}" th:object="${car}" method="post">
+        <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input th:field="*{carName}" type="text" class="form-control mb-4 col-4" id="nameInput" placeholder="Enter car' name">
+        </div>
+        <div class="form-group">
+            <label for="colorInput">Color</label>
+            <input th:field="*{carColor}" type="text" class="form-control mb-4 col-4" id="colorInput" placeholder="Enter car' color">
+        </div>
+        <div class="form-group">
+            <label for="quantityInput">Quantity</label>
+            <input th:field="*{carQuantity}" type="text" class="form-control mb-4 col-4" id="quantityInput" placeholder="Enter car' quantity">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
