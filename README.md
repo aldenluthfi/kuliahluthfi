@@ -38,7 +38,7 @@
 │       │ SISTER        │ Sistem Interaksi                            │ System Interaction                             │ 3       │
 │       │ STATPROB      │ Statistika dan Probabilitas                 │ Statistics and Probability                     │ 3       │
 │ ──────┼───────────────┼─────────────────────────────────────────────┼────────────────────────────────────────────────┼──────── │
-│ 5     │ KASDAD        │ Kecerdasan Artifisial dan Sains Data Dasar  │ Artificial Intelligence and Basic Data Science │ 4       │
+│ 5     │ KASDD         │ Kecerdasan Artifisial dan Sains Data Dasar  │ Artificial Intelligence and Basic Data Science │ 4       │
 │       │ RPL           │ Rancangan Perangkat Lunak                   │ Software Design                                │ 4       │
 │       │ JARKOM        │ Jaringan Komputer                           │ Computer Network                               │ 3       │
 │       │ GEOKOM        │ Geometri Komputasional                      │ Computational Geometry                         │ 3       │
