@@ -44,6 +44,12 @@
 │       │ GEOKOM        │ Geometri Komputasional                      │ Computational Geometry                         │ 3       │
 │       │ ANUM          │ Analisis Numerik                            │ Numerical Analysis                             │ 3       │
 │       │ KG            │ Graf Pengetahuan                            │ Knowledge Graph                                │ 3       │
+│ ──────┼───────────────┼─────────────────────────────────────────────┼────────────────────────────────────────────────┼──────── │
+│ 6     │ PPL           │ Proyek Perangkat Lunak                      │ Software Project                               │ 6       │
+│       │ TBI           │ Temu Balik INformasi                        │ Information Retrieval                          │ 4       │
+│       │ CRYPTO        │ Kriptografi dan Keamanan Informasi          │ Cryptography and Information Security          │ 4       │
+│       │ GAMEDEV       │ Pengembangan Gim                            │ Game Development                               │ 3       │
+│       │ RPP           │ Representasi Pengetahuan dan Penalaran      │ Knowledge and Reasoning Representation         │ 3       │
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 </pre>
 </sup>
