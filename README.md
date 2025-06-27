@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/b6c0fa29-c90b-4110-9ac7-74e96d95ce93">
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/aldenluthfi/kuliahluthfi/assets/83630284/e24deffc-f4ee-4d44-addf-50390c203b11">
+  <source media="(prefers-color-scheme: light)" srcset="/.github/meta/dark.png">
+  <source media="(prefers-color-scheme: dark)" srcset="/.github/meta/light.png">
   <img>
 </picture>
 
