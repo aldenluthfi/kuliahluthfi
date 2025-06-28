@@ -1,11 +1,14 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="/.github/meta/dark.png">
   <source media="(prefers-color-scheme: dark)" srcset="/.github/meta/light.png">
-  <img>
+  <img alt="Kuliah Luthfi">
 </picture>
 
-<br>
-<br>
+# 📖 About
+
+This repository serves as a centralized archive of my Computer Science studies, containing coursework materials, assignments, lecture notes, and textbooks organized by semester. The repository follows a structured approach to academic organization and serves as both a personal reference and a potential resource for fellow students.
+
+# 📚 Course Curriculum
 
 <sup>
 <pre>
@@ -53,6 +56,37 @@
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 </pre>
 </sup>
+
+# 📋 Contents Overview
+
+## 📚 Textbooks & References
+High-quality academic textbooks (illegally acquired by simple google searches) and reference materials for each course
+
+## 💻 Assignments & Projects
+Complete collection of:
+- Programming assignments and solutions
+- Mathematical problem sets
+- Research projects and reports
+- Group work and collaborative projects
+
+## 📊 Lecture Materials
+Organized lecture slides and notes from lectures for easy reference and review.
+
+# 📞 Contact
+
+Feel free to reach out if you:
+- Have questions about specific courses or materials
+- Want to collaborate on similar academic projects
+- Need clarification on any coursework
+You can contact me via **Email**, [hi@aldenluth.fi](mailto:hi@aldenluth.fi)
+
+# ⚖️ License
+
+This repository is licensed under the [MIT License](LICENSE).
+
+With this license, you are allowed to:
+- Use, copy, modify, and distribute the materials for educational purposes.
+- However, please respect academic integrity and do not submit these materials as your own work.
 
 
 
