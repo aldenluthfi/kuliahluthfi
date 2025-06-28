@@ -86,13 +86,14 @@ Feel free to reach out if you:
 You can contact me via **Email**, [hi@aldenluth.fi](mailto:hi@aldenluth.fi)
 
 ## ⚖️ License
-
 This repository is licensed under the [MIT License](LICENSE).
 
 With this license, you are allowed to:
-- Use, copy, modify, and distribute the materials for educational purposes.
-- However, please respect academic integrity and do not submit these materials as your own work.
+- Use, copy, modify, and distribute the materials
+- Create derivative works for educational purposes
+- Include the materials in larger academic projects
+- Redistribute under the same or different license terms
 
-
+However, please respect academic integrity if using this for educational purposes and do not submit these materials as your own original work without proper attribution.
 
 
