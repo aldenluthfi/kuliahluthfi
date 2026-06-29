@@ -4,14 +4,18 @@
   <img alt="Kuliah Luthfi">
 </picture>
 
-## 📖 About
+<pre>
+[ ABOUT ]
 
-This repository serves as a centralized archive of my Computer Science studies, containing coursework materials, assignments, lecture notes, and textbooks organized by semester. The repository follows a structured approach to academic organization and serves as both a personal reference and a potential resource for fellow students.
+This repository serves as a centralized archive of my Computer Science
+studies, containing coursework materials, assignments, lecture notes,
+and textbooks organized by semester. The repository follows a structured
+approach to academic organization and serves as both a personal
+reference and a potential resource for fellow students.
 
-## 📚 Course Curriculum
+[ COURSE CURRICULUM ]
 
 <sup>
-<pre>
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ Term  │ Code          │ Course (ID)                                 │ Course (EN)                                    │ Credits │
 │ ──────┼───────────────┼─────────────────────────────────────────────┼────────────────────────────────────────────────┼──────── │
@@ -58,35 +62,37 @@ This repository serves as a centralized archive of my Computer Science studies, 
 │ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────── +│
 │ Total                                                                                                                │ 119     │
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-</pre>
 </sup>
 
-## 📋 Contents Overview
+[ CONTENTS OVERVIEW ]
 
-### 📚 Textbooks & References
-High-quality academic textbooks (illegally acquired by simple google searches) and reference materials for each course
+Textbooks & References
+  --> High-quality academic textbooks (illegally acquired by simple
+      google searches) and reference materials for each course
 
-### 💻 Assignments & Projects
-Complete collection of:
-- Programming assignments and solutions
-- Mathematical problem sets
-- Research projects and reports
-- Group work and collaborative projects
+Assignments & Projects
+  --> Complete collection of:
+      - Programming assignments and solutions
+      - Mathematical problem sets
+      - Research projects and reports
+      - Group work and collaborative projects
 
-### 📊 Lecture Materials
-Organized lecture slides and notes from lectures for easy reference and review.
+Lecture Materials
+  --> Organized lecture slides and notes from lectures for easy
+      reference and review.
 
-## 📞 Contact
+[ CONTACT ]
 
 Feel free to reach out if you:
 - Have questions about specific courses or materials
 - Want to collaborate on similar academic projects
 - Need clarification on any coursework
 
-You can contact me via **Email**, [hi@aldenluth.fi](mailto:hi@aldenluth.fi)
+You can contact me via Email, <a href="mailto:hi@aldenluth.fi">hi@aldenluth.fi</a>
 
-## ⚖️ License
-This repository is licensed under the [MIT License](LICENSE).
+[ LICENSE ]
+
+This repository is licensed under the <a href="LICENSE">MIT License</a>.
 
 With this license, you are allowed to:
 - Use, copy, modify, and distribute the materials
@@ -94,6 +100,7 @@ With this license, you are allowed to:
 - Include the materials in larger academic projects
 - Redistribute under the same or different license terms
 
-However, please respect academic integrity if using this for educational purposes and do not submit these materials as your own original work without proper attribution.
-
-
+However, please respect academic integrity if using this for educational
+purposes and do not submit these materials as your own original work
+without proper attribution.
+</pre>
